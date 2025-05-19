@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: json_with_int.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -18,6 +18,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 ///
 ///   The JSON representation for `NullValue` is JSON `null`.
 class NullValue extends $pb.ProtobufEnum {
+  /// Null value.
   static const NullValue NULL_VALUE = NullValue._(0, _omitEnumNames ? '' : 'NULL_VALUE');
 
   static const $core.List<NullValue> values = <NullValue> [
@@ -27,7 +28,7 @@ class NullValue extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, NullValue> _byValue = $pb.ProtobufEnum.initByValue(values);
   static NullValue? valueOf($core.int value) => _byValue[value];
 
-  const NullValue._($core.int v, $core.String n) : super(v, n);
+  const NullValue._(super.v, super.n);
 }
 
 

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: points.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -83,12 +83,14 @@ const RecommendStrategy$json = {
   '2': [
     {'1': 'AverageVector', '2': 0},
     {'1': 'BestScore', '2': 1},
+    {'1': 'SumScores', '2': 2},
   ],
 };
 
 /// Descriptor for `RecommendStrategy`. Decode as a `google.protobuf.EnumDescriptorProto`.
 final $typed_data.Uint8List recommendStrategyDescriptor = $convert.base64Decode(
-    'ChFSZWNvbW1lbmRTdHJhdGVneRIRCg1BdmVyYWdlVmVjdG9yEAASDQoJQmVzdFNjb3JlEAE=');
+    'ChFSZWNvbW1lbmRTdHJhdGVneRIRCg1BdmVyYWdlVmVjdG9yEAASDQoJQmVzdFNjb3JlEAESDQ'
+    'oJU3VtU2NvcmVzEAI=');
 
 @$core.Deprecated('Use fusionDescriptor instead')
 const Fusion$json = {
@@ -1544,6 +1546,176 @@ final $typed_data.Uint8List contextInputDescriptor = $convert.base64Decode(
     'CgxDb250ZXh0SW5wdXQSLgoFcGFpcnMYASADKAsyGC5xZHJhbnQuQ29udGV4dElucHV0UGFpcl'
     'IFcGFpcnM=');
 
+@$core.Deprecated('Use formulaDescriptor instead')
+const Formula$json = {
+  '1': 'Formula',
+  '2': [
+    {'1': 'expression', '3': 1, '4': 1, '5': 11, '6': '.qdrant.Expression', '10': 'expression'},
+    {'1': 'defaults', '3': 2, '4': 3, '5': 11, '6': '.qdrant.Formula.DefaultsEntry', '10': 'defaults'},
+  ],
+  '3': [Formula_DefaultsEntry$json],
+};
+
+@$core.Deprecated('Use formulaDescriptor instead')
+const Formula_DefaultsEntry$json = {
+  '1': 'DefaultsEntry',
+  '2': [
+    {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
+    {'1': 'value', '3': 2, '4': 1, '5': 11, '6': '.qdrant.Value', '10': 'value'},
+  ],
+  '7': {'7': true},
+};
+
+/// Descriptor for `Formula`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List formulaDescriptor = $convert.base64Decode(
+    'CgdGb3JtdWxhEjIKCmV4cHJlc3Npb24YASABKAsyEi5xZHJhbnQuRXhwcmVzc2lvblIKZXhwcm'
+    'Vzc2lvbhI5CghkZWZhdWx0cxgCIAMoCzIdLnFkcmFudC5Gb3JtdWxhLkRlZmF1bHRzRW50cnlS'
+    'CGRlZmF1bHRzGkoKDURlZmF1bHRzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSIwoFdmFsdWUYAi'
+    'ABKAsyDS5xZHJhbnQuVmFsdWVSBXZhbHVlOgI4AQ==');
+
+@$core.Deprecated('Use expressionDescriptor instead')
+const Expression$json = {
+  '1': 'Expression',
+  '2': [
+    {'1': 'constant', '3': 1, '4': 1, '5': 2, '9': 0, '10': 'constant'},
+    {'1': 'variable', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'variable'},
+    {'1': 'condition', '3': 3, '4': 1, '5': 11, '6': '.qdrant.Condition', '9': 0, '10': 'condition'},
+    {'1': 'geo_distance', '3': 4, '4': 1, '5': 11, '6': '.qdrant.GeoDistance', '9': 0, '10': 'geoDistance'},
+    {'1': 'datetime', '3': 5, '4': 1, '5': 9, '9': 0, '10': 'datetime'},
+    {'1': 'datetime_key', '3': 6, '4': 1, '5': 9, '9': 0, '10': 'datetimeKey'},
+    {'1': 'mult', '3': 7, '4': 1, '5': 11, '6': '.qdrant.MultExpression', '9': 0, '10': 'mult'},
+    {'1': 'sum', '3': 8, '4': 1, '5': 11, '6': '.qdrant.SumExpression', '9': 0, '10': 'sum'},
+    {'1': 'div', '3': 9, '4': 1, '5': 11, '6': '.qdrant.DivExpression', '9': 0, '10': 'div'},
+    {'1': 'neg', '3': 10, '4': 1, '5': 11, '6': '.qdrant.Expression', '9': 0, '10': 'neg'},
+    {'1': 'abs', '3': 11, '4': 1, '5': 11, '6': '.qdrant.Expression', '9': 0, '10': 'abs'},
+    {'1': 'sqrt', '3': 12, '4': 1, '5': 11, '6': '.qdrant.Expression', '9': 0, '10': 'sqrt'},
+    {'1': 'pow', '3': 13, '4': 1, '5': 11, '6': '.qdrant.PowExpression', '9': 0, '10': 'pow'},
+    {'1': 'exp', '3': 14, '4': 1, '5': 11, '6': '.qdrant.Expression', '9': 0, '10': 'exp'},
+    {'1': 'log10', '3': 15, '4': 1, '5': 11, '6': '.qdrant.Expression', '9': 0, '10': 'log10'},
+    {'1': 'ln', '3': 16, '4': 1, '5': 11, '6': '.qdrant.Expression', '9': 0, '10': 'ln'},
+    {'1': 'exp_decay', '3': 17, '4': 1, '5': 11, '6': '.qdrant.DecayParamsExpression', '9': 0, '10': 'expDecay'},
+    {'1': 'gauss_decay', '3': 18, '4': 1, '5': 11, '6': '.qdrant.DecayParamsExpression', '9': 0, '10': 'gaussDecay'},
+    {'1': 'lin_decay', '3': 19, '4': 1, '5': 11, '6': '.qdrant.DecayParamsExpression', '9': 0, '10': 'linDecay'},
+  ],
+  '8': [
+    {'1': 'variant'},
+  ],
+};
+
+/// Descriptor for `Expression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List expressionDescriptor = $convert.base64Decode(
+    'CgpFeHByZXNzaW9uEhwKCGNvbnN0YW50GAEgASgCSABSCGNvbnN0YW50EhwKCHZhcmlhYmxlGA'
+    'IgASgJSABSCHZhcmlhYmxlEjEKCWNvbmRpdGlvbhgDIAEoCzIRLnFkcmFudC5Db25kaXRpb25I'
+    'AFIJY29uZGl0aW9uEjgKDGdlb19kaXN0YW5jZRgEIAEoCzITLnFkcmFudC5HZW9EaXN0YW5jZU'
+    'gAUgtnZW9EaXN0YW5jZRIcCghkYXRldGltZRgFIAEoCUgAUghkYXRldGltZRIjCgxkYXRldGlt'
+    'ZV9rZXkYBiABKAlIAFILZGF0ZXRpbWVLZXkSLAoEbXVsdBgHIAEoCzIWLnFkcmFudC5NdWx0RX'
+    'hwcmVzc2lvbkgAUgRtdWx0EikKA3N1bRgIIAEoCzIVLnFkcmFudC5TdW1FeHByZXNzaW9uSABS'
+    'A3N1bRIpCgNkaXYYCSABKAsyFS5xZHJhbnQuRGl2RXhwcmVzc2lvbkgAUgNkaXYSJgoDbmVnGA'
+    'ogASgLMhIucWRyYW50LkV4cHJlc3Npb25IAFIDbmVnEiYKA2FicxgLIAEoCzISLnFkcmFudC5F'
+    'eHByZXNzaW9uSABSA2FicxIoCgRzcXJ0GAwgASgLMhIucWRyYW50LkV4cHJlc3Npb25IAFIEc3'
+    'FydBIpCgNwb3cYDSABKAsyFS5xZHJhbnQuUG93RXhwcmVzc2lvbkgAUgNwb3cSJgoDZXhwGA4g'
+    'ASgLMhIucWRyYW50LkV4cHJlc3Npb25IAFIDZXhwEioKBWxvZzEwGA8gASgLMhIucWRyYW50Lk'
+    'V4cHJlc3Npb25IAFIFbG9nMTASJAoCbG4YECABKAsyEi5xZHJhbnQuRXhwcmVzc2lvbkgAUgJs'
+    'bhI8CglleHBfZGVjYXkYESABKAsyHS5xZHJhbnQuRGVjYXlQYXJhbXNFeHByZXNzaW9uSABSCG'
+    'V4cERlY2F5EkAKC2dhdXNzX2RlY2F5GBIgASgLMh0ucWRyYW50LkRlY2F5UGFyYW1zRXhwcmVz'
+    'c2lvbkgAUgpnYXVzc0RlY2F5EjwKCWxpbl9kZWNheRgTIAEoCzIdLnFkcmFudC5EZWNheVBhcm'
+    'Ftc0V4cHJlc3Npb25IAFIIbGluRGVjYXlCCQoHdmFyaWFudA==');
+
+@$core.Deprecated('Use geoDistanceDescriptor instead')
+const GeoDistance$json = {
+  '1': 'GeoDistance',
+  '2': [
+    {'1': 'origin', '3': 1, '4': 1, '5': 11, '6': '.qdrant.GeoPoint', '10': 'origin'},
+    {'1': 'to', '3': 2, '4': 1, '5': 9, '10': 'to'},
+  ],
+};
+
+/// Descriptor for `GeoDistance`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List geoDistanceDescriptor = $convert.base64Decode(
+    'CgtHZW9EaXN0YW5jZRIoCgZvcmlnaW4YASABKAsyEC5xZHJhbnQuR2VvUG9pbnRSBm9yaWdpbh'
+    'IOCgJ0bxgCIAEoCVICdG8=');
+
+@$core.Deprecated('Use multExpressionDescriptor instead')
+const MultExpression$json = {
+  '1': 'MultExpression',
+  '2': [
+    {'1': 'mult', '3': 1, '4': 3, '5': 11, '6': '.qdrant.Expression', '10': 'mult'},
+  ],
+};
+
+/// Descriptor for `MultExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List multExpressionDescriptor = $convert.base64Decode(
+    'Cg5NdWx0RXhwcmVzc2lvbhImCgRtdWx0GAEgAygLMhIucWRyYW50LkV4cHJlc3Npb25SBG11bH'
+    'Q=');
+
+@$core.Deprecated('Use sumExpressionDescriptor instead')
+const SumExpression$json = {
+  '1': 'SumExpression',
+  '2': [
+    {'1': 'sum', '3': 1, '4': 3, '5': 11, '6': '.qdrant.Expression', '10': 'sum'},
+  ],
+};
+
+/// Descriptor for `SumExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List sumExpressionDescriptor = $convert.base64Decode(
+    'Cg1TdW1FeHByZXNzaW9uEiQKA3N1bRgBIAMoCzISLnFkcmFudC5FeHByZXNzaW9uUgNzdW0=');
+
+@$core.Deprecated('Use divExpressionDescriptor instead')
+const DivExpression$json = {
+  '1': 'DivExpression',
+  '2': [
+    {'1': 'left', '3': 1, '4': 1, '5': 11, '6': '.qdrant.Expression', '10': 'left'},
+    {'1': 'right', '3': 2, '4': 1, '5': 11, '6': '.qdrant.Expression', '10': 'right'},
+    {'1': 'by_zero_default', '3': 3, '4': 1, '5': 2, '9': 0, '10': 'byZeroDefault', '17': true},
+  ],
+  '8': [
+    {'1': '_by_zero_default'},
+  ],
+};
+
+/// Descriptor for `DivExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List divExpressionDescriptor = $convert.base64Decode(
+    'Cg1EaXZFeHByZXNzaW9uEiYKBGxlZnQYASABKAsyEi5xZHJhbnQuRXhwcmVzc2lvblIEbGVmdB'
+    'IoCgVyaWdodBgCIAEoCzISLnFkcmFudC5FeHByZXNzaW9uUgVyaWdodBIrCg9ieV96ZXJvX2Rl'
+    'ZmF1bHQYAyABKAJIAFINYnlaZXJvRGVmYXVsdIgBAUISChBfYnlfemVyb19kZWZhdWx0');
+
+@$core.Deprecated('Use powExpressionDescriptor instead')
+const PowExpression$json = {
+  '1': 'PowExpression',
+  '2': [
+    {'1': 'base', '3': 1, '4': 1, '5': 11, '6': '.qdrant.Expression', '10': 'base'},
+    {'1': 'exponent', '3': 2, '4': 1, '5': 11, '6': '.qdrant.Expression', '10': 'exponent'},
+  ],
+};
+
+/// Descriptor for `PowExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List powExpressionDescriptor = $convert.base64Decode(
+    'Cg1Qb3dFeHByZXNzaW9uEiYKBGJhc2UYASABKAsyEi5xZHJhbnQuRXhwcmVzc2lvblIEYmFzZR'
+    'IuCghleHBvbmVudBgCIAEoCzISLnFkcmFudC5FeHByZXNzaW9uUghleHBvbmVudA==');
+
+@$core.Deprecated('Use decayParamsExpressionDescriptor instead')
+const DecayParamsExpression$json = {
+  '1': 'DecayParamsExpression',
+  '2': [
+    {'1': 'x', '3': 1, '4': 1, '5': 11, '6': '.qdrant.Expression', '10': 'x'},
+    {'1': 'target', '3': 2, '4': 1, '5': 11, '6': '.qdrant.Expression', '9': 0, '10': 'target', '17': true},
+    {'1': 'scale', '3': 3, '4': 1, '5': 2, '9': 1, '10': 'scale', '17': true},
+    {'1': 'midpoint', '3': 4, '4': 1, '5': 2, '9': 2, '10': 'midpoint', '17': true},
+  ],
+  '8': [
+    {'1': '_target'},
+    {'1': '_scale'},
+    {'1': '_midpoint'},
+  ],
+};
+
+/// Descriptor for `DecayParamsExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List decayParamsExpressionDescriptor = $convert.base64Decode(
+    'ChVEZWNheVBhcmFtc0V4cHJlc3Npb24SIAoBeBgBIAEoCzISLnFkcmFudC5FeHByZXNzaW9uUg'
+    'F4Ei8KBnRhcmdldBgCIAEoCzISLnFkcmFudC5FeHByZXNzaW9uSABSBnRhcmdldIgBARIZCgVz'
+    'Y2FsZRgDIAEoAkgBUgVzY2FsZYgBARIfCghtaWRwb2ludBgEIAEoAkgCUghtaWRwb2ludIgBAU'
+    'IJCgdfdGFyZ2V0QggKBl9zY2FsZUILCglfbWlkcG9pbnQ=');
+
 @$core.Deprecated('Use queryDescriptor instead')
 const Query$json = {
   '1': 'Query',
@@ -1555,6 +1727,7 @@ const Query$json = {
     {'1': 'order_by', '3': 5, '4': 1, '5': 11, '6': '.qdrant.OrderBy', '9': 0, '10': 'orderBy'},
     {'1': 'fusion', '3': 6, '4': 1, '5': 14, '6': '.qdrant.Fusion', '9': 0, '10': 'fusion'},
     {'1': 'sample', '3': 7, '4': 1, '5': 14, '6': '.qdrant.Sample', '9': 0, '10': 'sample'},
+    {'1': 'formula', '3': 8, '4': 1, '5': 11, '6': '.qdrant.Formula', '9': 0, '10': 'formula'},
   ],
   '8': [
     {'1': 'variant'},
@@ -1569,7 +1742,8 @@ final $typed_data.Uint8List queryDescriptor = $convert.base64Decode(
     'AKB2NvbnRleHQYBCABKAsyFC5xZHJhbnQuQ29udGV4dElucHV0SABSB2NvbnRleHQSLAoIb3Jk'
     'ZXJfYnkYBSABKAsyDy5xZHJhbnQuT3JkZXJCeUgAUgdvcmRlckJ5EigKBmZ1c2lvbhgGIAEoDj'
     'IOLnFkcmFudC5GdXNpb25IAFIGZnVzaW9uEigKBnNhbXBsZRgHIAEoDjIOLnFkcmFudC5TYW1w'
-    'bGVIAFIGc2FtcGxlQgkKB3ZhcmlhbnQ=');
+    'bGVIAFIGc2FtcGxlEisKB2Zvcm11bGEYCCABKAsyDy5xZHJhbnQuRm9ybXVsYUgAUgdmb3JtdW'
+    'xhQgkKB3ZhcmlhbnQ=');
 
 @$core.Deprecated('Use prefetchQueryDescriptor instead')
 const PrefetchQuery$json = {
@@ -2147,13 +2321,18 @@ const PointsOperationResponse$json = {
   '2': [
     {'1': 'result', '3': 1, '4': 1, '5': 11, '6': '.qdrant.UpdateResult', '10': 'result'},
     {'1': 'time', '3': 2, '4': 1, '5': 1, '10': 'time'},
+    {'1': 'usage', '3': 3, '4': 1, '5': 11, '6': '.qdrant.HardwareUsage', '9': 0, '10': 'usage', '17': true},
+  ],
+  '8': [
+    {'1': '_usage'},
   ],
 };
 
 /// Descriptor for `PointsOperationResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List pointsOperationResponseDescriptor = $convert.base64Decode(
     'ChdQb2ludHNPcGVyYXRpb25SZXNwb25zZRIsCgZyZXN1bHQYASABKAsyFC5xZHJhbnQuVXBkYX'
-    'RlUmVzdWx0UgZyZXN1bHQSEgoEdGltZRgCIAEoAVIEdGltZQ==');
+    'RlUmVzdWx0UgZyZXN1bHQSEgoEdGltZRgCIAEoAVIEdGltZRIwCgV1c2FnZRgDIAEoCzIVLnFk'
+    'cmFudC5IYXJkd2FyZVVzYWdlSABSBXVzYWdliAEBQggKBl91c2FnZQ==');
 
 @$core.Deprecated('Use updateResultDescriptor instead')
 const UpdateResult$json = {
@@ -2823,6 +3002,12 @@ const FieldCondition$json = {
     {'1': 'values_count', '3': 6, '4': 1, '5': 11, '6': '.qdrant.ValuesCount', '10': 'valuesCount'},
     {'1': 'geo_polygon', '3': 7, '4': 1, '5': 11, '6': '.qdrant.GeoPolygon', '10': 'geoPolygon'},
     {'1': 'datetime_range', '3': 8, '4': 1, '5': 11, '6': '.qdrant.DatetimeRange', '10': 'datetimeRange'},
+    {'1': 'is_empty', '3': 9, '4': 1, '5': 8, '9': 0, '10': 'isEmpty', '17': true},
+    {'1': 'is_null', '3': 10, '4': 1, '5': 8, '9': 1, '10': 'isNull', '17': true},
+  ],
+  '8': [
+    {'1': '_is_empty'},
+    {'1': '_is_null'},
   ],
 };
 
@@ -2835,7 +3020,8 @@ final $typed_data.Uint8List fieldConditionDescriptor = $convert.base64Decode(
     'dXMSNgoMdmFsdWVzX2NvdW50GAYgASgLMhMucWRyYW50LlZhbHVlc0NvdW50Ugt2YWx1ZXNDb3'
     'VudBIzCgtnZW9fcG9seWdvbhgHIAEoCzISLnFkcmFudC5HZW9Qb2x5Z29uUgpnZW9Qb2x5Z29u'
     'EjwKDmRhdGV0aW1lX3JhbmdlGAggASgLMhUucWRyYW50LkRhdGV0aW1lUmFuZ2VSDWRhdGV0aW'
-    '1lUmFuZ2U=');
+    '1lUmFuZ2USHgoIaXNfZW1wdHkYCSABKAhIAFIHaXNFbXB0eYgBARIcCgdpc19udWxsGAogASgI'
+    'SAFSBmlzTnVsbIgBAUILCglfaXNfZW1wdHlCCgoIX2lzX251bGw=');
 
 @$core.Deprecated('Use matchDescriptor instead')
 const Match$json = {
@@ -3102,8 +3288,10 @@ const HardwareUsage$json = {
     {'1': 'cpu', '3': 1, '4': 1, '5': 4, '10': 'cpu'},
     {'1': 'payload_io_read', '3': 2, '4': 1, '5': 4, '10': 'payloadIoRead'},
     {'1': 'payload_io_write', '3': 3, '4': 1, '5': 4, '10': 'payloadIoWrite'},
-    {'1': 'vector_io_read', '3': 4, '4': 1, '5': 4, '10': 'vectorIoRead'},
-    {'1': 'vector_io_write', '3': 5, '4': 1, '5': 4, '10': 'vectorIoWrite'},
+    {'1': 'payload_index_io_read', '3': 4, '4': 1, '5': 4, '10': 'payloadIndexIoRead'},
+    {'1': 'payload_index_io_write', '3': 5, '4': 1, '5': 4, '10': 'payloadIndexIoWrite'},
+    {'1': 'vector_io_read', '3': 6, '4': 1, '5': 4, '10': 'vectorIoRead'},
+    {'1': 'vector_io_write', '3': 7, '4': 1, '5': 4, '10': 'vectorIoWrite'},
   ],
 };
 
@@ -3111,6 +3299,8 @@ const HardwareUsage$json = {
 final $typed_data.Uint8List hardwareUsageDescriptor = $convert.base64Decode(
     'Cg1IYXJkd2FyZVVzYWdlEhAKA2NwdRgBIAEoBFIDY3B1EiYKD3BheWxvYWRfaW9fcmVhZBgCIA'
     'EoBFINcGF5bG9hZElvUmVhZBIoChBwYXlsb2FkX2lvX3dyaXRlGAMgASgEUg5wYXlsb2FkSW9X'
-    'cml0ZRIkCg52ZWN0b3JfaW9fcmVhZBgEIAEoBFIMdmVjdG9ySW9SZWFkEiYKD3ZlY3Rvcl9pb1'
-    '93cml0ZRgFIAEoBFINdmVjdG9ySW9Xcml0ZQ==');
+    'cml0ZRIxChVwYXlsb2FkX2luZGV4X2lvX3JlYWQYBCABKARSEnBheWxvYWRJbmRleElvUmVhZB'
+    'IzChZwYXlsb2FkX2luZGV4X2lvX3dyaXRlGAUgASgEUhNwYXlsb2FkSW5kZXhJb1dyaXRlEiQK'
+    'DnZlY3Rvcl9pb19yZWFkGAYgASgEUgx2ZWN0b3JJb1JlYWQSJgoPdmVjdG9yX2lvX3dyaXRlGA'
+    'cgASgEUg12ZWN0b3JJb1dyaXRl');
 

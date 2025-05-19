@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: health_check.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -29,7 +29,7 @@ class HealthCheckResponse_ServingStatus extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, HealthCheckResponse_ServingStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
   static HealthCheckResponse_ServingStatus? valueOf($core.int value) => _byValue[value];
 
-  const HealthCheckResponse_ServingStatus._($core.int v, $core.String n) : super(v, n);
+  const HealthCheckResponse_ServingStatus._(super.v, super.n);
 }
 
 

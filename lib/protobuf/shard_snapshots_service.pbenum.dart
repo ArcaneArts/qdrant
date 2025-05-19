@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: shard_snapshots_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -29,7 +29,7 @@ class ShardSnapshotPriority extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, ShardSnapshotPriority> _byValue = $pb.ProtobufEnum.initByValue(values);
   static ShardSnapshotPriority? valueOf($core.int value) => _byValue[value];
 
-  const ShardSnapshotPriority._($core.int v, $core.String n) : super(v, n);
+  const ShardSnapshotPriority._(super.v, super.n);
 }
 
 

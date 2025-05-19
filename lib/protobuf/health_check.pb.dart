@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: health_check.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,6 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'health_check.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'health_check.pbenum.dart';
 
@@ -64,7 +66,7 @@ class HealthCheckRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
-  void clearService() => clearField(1);
+  void clearService() => $_clearField(1);
 }
 
 class HealthCheckResponse extends $pb.GeneratedMessage {
@@ -110,11 +112,11 @@ class HealthCheckResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   HealthCheckResponse_ServingStatus get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status(HealthCheckResponse_ServingStatus v) { setField(1, v); }
+  set status(HealthCheckResponse_ServingStatus v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStatus() => clearField(1);
+  void clearStatus() => $_clearField(1);
 }
 
 

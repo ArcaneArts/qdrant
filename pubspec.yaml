@@ -1,14 +1,14 @@
 name: qdrant
 description: gRPC client for Qdrant
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/ArcaneArts/qdrant
 
 environment:
   sdk: ^3.7.0
 dependencies:
   fixnum: ^1.1.1
-  grpc: ^4.0.1
-  protobuf: ^3.1.0
+  grpc: ^4.0.4
+  protobuf: ^4.0.0
 
 dev_dependencies:
   build_runner: ^2.4.15

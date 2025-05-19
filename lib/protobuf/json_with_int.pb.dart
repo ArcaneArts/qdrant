@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: json_with_int.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -16,6 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'json_with_int.pbenum.dart';
 
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
 export 'json_with_int.pbenum.dart';
 
 ///  `Struct` represents a structured data value, consisting of fields
@@ -28,11 +30,11 @@ export 'json_with_int.pbenum.dart';
 ///  The JSON representation for `Struct` is a JSON object.
 class Struct extends $pb.GeneratedMessage {
   factory Struct({
-    $core.Map<$core.String, Value>? fields,
+    $core.Iterable<$core.MapEntry<$core.String, Value>>? fields,
   }) {
     final $result = create();
     if (fields != null) {
-      $result.fields.addAll(fields);
+      $result.fields.addEntries(fields);
     }
     return $result;
   }
@@ -68,7 +70,7 @@ class Struct extends $pb.GeneratedMessage {
 
   /// Unordered map of dynamically typed values.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, Value> get fields => $_getMap(0);
+  $pb.PbMap<$core.String, Value> get fields => $_getMap(0);
 }
 
 enum Value_Kind {
@@ -170,17 +172,17 @@ class Value extends $pb.GeneratedMessage {
   static Value? _defaultInstance;
 
   Value_Kind whichKind() => _Value_KindByTag[$_whichOneof(0)]!;
-  void clearKind() => clearField($_whichOneof(0));
+  void clearKind() => $_clearField($_whichOneof(0));
 
   /// Represents a null value.
   @$pb.TagNumber(1)
   NullValue get nullValue => $_getN(0);
   @$pb.TagNumber(1)
-  set nullValue(NullValue v) { setField(1, v); }
+  set nullValue(NullValue v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasNullValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearNullValue() => clearField(1);
+  void clearNullValue() => $_clearField(1);
 
   /// Represents a double value.
   @$pb.TagNumber(2)
@@ -190,7 +192,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDoubleValue() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDoubleValue() => clearField(2);
+  void clearDoubleValue() => $_clearField(2);
 
   /// Represents an integer value
   @$pb.TagNumber(3)
@@ -200,7 +202,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIntegerValue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearIntegerValue() => clearField(3);
+  void clearIntegerValue() => $_clearField(3);
 
   /// Represents a string value.
   @$pb.TagNumber(4)
@@ -210,7 +212,7 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasStringValue() => $_has(3);
   @$pb.TagNumber(4)
-  void clearStringValue() => clearField(4);
+  void clearStringValue() => $_clearField(4);
 
   /// Represents a boolean value.
   @$pb.TagNumber(5)
@@ -220,17 +222,17 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasBoolValue() => $_has(4);
   @$pb.TagNumber(5)
-  void clearBoolValue() => clearField(5);
+  void clearBoolValue() => $_clearField(5);
 
   /// Represents a structured value.
   @$pb.TagNumber(6)
   Struct get structValue => $_getN(5);
   @$pb.TagNumber(6)
-  set structValue(Struct v) { setField(6, v); }
+  set structValue(Struct v) { $_setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStructValue() => $_has(5);
   @$pb.TagNumber(6)
-  void clearStructValue() => clearField(6);
+  void clearStructValue() => $_clearField(6);
   @$pb.TagNumber(6)
   Struct ensureStructValue() => $_ensure(5);
 
@@ -238,11 +240,11 @@ class Value extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   ListValue get listValue => $_getN(6);
   @$pb.TagNumber(7)
-  set listValue(ListValue v) { setField(7, v); }
+  set listValue(ListValue v) { $_setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasListValue() => $_has(6);
   @$pb.TagNumber(7)
-  void clearListValue() => clearField(7);
+  void clearListValue() => $_clearField(7);
   @$pb.TagNumber(7)
   ListValue ensureListValue() => $_ensure(6);
 }
@@ -292,7 +294,7 @@ class ListValue extends $pb.GeneratedMessage {
 
   /// Repeated field of dynamically typed values.
   @$pb.TagNumber(1)
-  $core.List<Value> get values => $_getList(0);
+  $pb.PbList<Value> get values => $_getList(0);
 }
 
 

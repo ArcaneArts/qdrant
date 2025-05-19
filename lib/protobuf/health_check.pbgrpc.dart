@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: health_check.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -26,11 +26,7 @@ class HealthClient extends $grpc.Client {
       ($2.HealthCheckRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $2.HealthCheckResponse.fromBuffer(value));
 
-  HealthClient($grpc.ClientChannel channel,
-      {$grpc.CallOptions? options,
-      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+  HealthClient(super.channel, {super.options, super.interceptors});
 
   $grpc.ResponseFuture<$2.HealthCheckResponse> check($2.HealthCheckRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$check, request, options: options);
@@ -51,8 +47,8 @@ abstract class HealthServiceBase extends $grpc.Service {
         ($2.HealthCheckResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$2.HealthCheckResponse> check_Pre($grpc.ServiceCall call, $async.Future<$2.HealthCheckRequest> request) async {
-    return check(call, await request);
+  $async.Future<$2.HealthCheckResponse> check_Pre($grpc.ServiceCall $call, $async.Future<$2.HealthCheckRequest> $request) async {
+    return check($call, await $request);
   }
 
   $async.Future<$2.HealthCheckResponse> check($grpc.ServiceCall call, $2.HealthCheckRequest request);

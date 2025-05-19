@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: collections_internal_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -43,11 +43,7 @@ class CollectionsInternalClient extends $grpc.Client {
       ($0.UpdateShardCutoffPointRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $1.CollectionOperationResponse.fromBuffer(value));
 
-  CollectionsInternalClient($grpc.ClientChannel channel,
-      {$grpc.CallOptions? options,
-      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+  CollectionsInternalClient(super.channel, {super.options, super.interceptors});
 
   $grpc.ResponseFuture<$1.GetCollectionInfoResponse> get($0.GetCollectionInfoRequestInternal request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$get, request, options: options);
@@ -112,24 +108,24 @@ abstract class CollectionsInternalServiceBase extends $grpc.Service {
         ($1.CollectionOperationResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1.GetCollectionInfoResponse> get_Pre($grpc.ServiceCall call, $async.Future<$0.GetCollectionInfoRequestInternal> request) async {
-    return get(call, await request);
+  $async.Future<$1.GetCollectionInfoResponse> get_Pre($grpc.ServiceCall $call, $async.Future<$0.GetCollectionInfoRequestInternal> $request) async {
+    return get($call, await $request);
   }
 
-  $async.Future<$1.CollectionOperationResponse> initiate_Pre($grpc.ServiceCall call, $async.Future<$0.InitiateShardTransferRequest> request) async {
-    return initiate(call, await request);
+  $async.Future<$1.CollectionOperationResponse> initiate_Pre($grpc.ServiceCall $call, $async.Future<$0.InitiateShardTransferRequest> $request) async {
+    return initiate($call, await $request);
   }
 
-  $async.Future<$1.CollectionOperationResponse> waitForShardState_Pre($grpc.ServiceCall call, $async.Future<$0.WaitForShardStateRequest> request) async {
-    return waitForShardState(call, await request);
+  $async.Future<$1.CollectionOperationResponse> waitForShardState_Pre($grpc.ServiceCall $call, $async.Future<$0.WaitForShardStateRequest> $request) async {
+    return waitForShardState($call, await $request);
   }
 
-  $async.Future<$0.GetShardRecoveryPointResponse> getShardRecoveryPoint_Pre($grpc.ServiceCall call, $async.Future<$0.GetShardRecoveryPointRequest> request) async {
-    return getShardRecoveryPoint(call, await request);
+  $async.Future<$0.GetShardRecoveryPointResponse> getShardRecoveryPoint_Pre($grpc.ServiceCall $call, $async.Future<$0.GetShardRecoveryPointRequest> $request) async {
+    return getShardRecoveryPoint($call, await $request);
   }
 
-  $async.Future<$1.CollectionOperationResponse> updateShardCutoffPoint_Pre($grpc.ServiceCall call, $async.Future<$0.UpdateShardCutoffPointRequest> request) async {
-    return updateShardCutoffPoint(call, await request);
+  $async.Future<$1.CollectionOperationResponse> updateShardCutoffPoint_Pre($grpc.ServiceCall $call, $async.Future<$0.UpdateShardCutoffPointRequest> $request) async {
+    return updateShardCutoffPoint($call, await $request);
   }
 
   $async.Future<$1.GetCollectionInfoResponse> get($grpc.ServiceCall call, $0.GetCollectionInfoRequestInternal request);

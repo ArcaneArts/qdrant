@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: points.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -27,7 +27,7 @@ class WriteOrderingType extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, WriteOrderingType> _byValue = $pb.ProtobufEnum.initByValue(values);
   static WriteOrderingType? valueOf($core.int value) => _byValue[value];
 
-  const WriteOrderingType._($core.int v, $core.String n) : super(v, n);
+  const WriteOrderingType._(super.v, super.n);
 }
 
 class ReadConsistencyType extends $pb.ProtobufEnum {
@@ -44,7 +44,7 @@ class ReadConsistencyType extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, ReadConsistencyType> _byValue = $pb.ProtobufEnum.initByValue(values);
   static ReadConsistencyType? valueOf($core.int value) => _byValue[value];
 
-  const ReadConsistencyType._($core.int v, $core.String n) : super(v, n);
+  const ReadConsistencyType._(super.v, super.n);
 }
 
 class FieldType extends $pb.ProtobufEnum {
@@ -71,7 +71,7 @@ class FieldType extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, FieldType> _byValue = $pb.ProtobufEnum.initByValue(values);
   static FieldType? valueOf($core.int value) => _byValue[value];
 
-  const FieldType._($core.int v, $core.String n) : super(v, n);
+  const FieldType._(super.v, super.n);
 }
 
 class Direction extends $pb.ProtobufEnum {
@@ -86,23 +86,32 @@ class Direction extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, Direction> _byValue = $pb.ProtobufEnum.initByValue(values);
   static Direction? valueOf($core.int value) => _byValue[value];
 
-  const Direction._($core.int v, $core.String n) : super(v, n);
+  const Direction._(super.v, super.n);
 }
 
 /// How to use positive and negative vectors to find the results, default is `AverageVector`.
 class RecommendStrategy extends $pb.ProtobufEnum {
+  /// Average positive and negative vectors and create a single query with the formula
+  /// `query = avg_pos + avg_pos - avg_neg`. Then performs normal search.
   static const RecommendStrategy AverageVector = RecommendStrategy._(0, _omitEnumNames ? '' : 'AverageVector');
+  /// Uses custom search objective. Each candidate is compared against all
+  /// examples, its score is then chosen from the `max(max_pos_score, max_neg_score)`.
+  /// If the `max_neg_score` is chosen then it is squared and negated.
   static const RecommendStrategy BestScore = RecommendStrategy._(1, _omitEnumNames ? '' : 'BestScore');
+  /// Uses custom search objective. Compares against all inputs, sums all the scores.
+  /// Scores against positive vectors are added, against negatives are subtracted.
+  static const RecommendStrategy SumScores = RecommendStrategy._(2, _omitEnumNames ? '' : 'SumScores');
 
   static const $core.List<RecommendStrategy> values = <RecommendStrategy> [
     AverageVector,
     BestScore,
+    SumScores,
   ];
 
   static final $core.Map<$core.int, RecommendStrategy> _byValue = $pb.ProtobufEnum.initByValue(values);
   static RecommendStrategy? valueOf($core.int value) => _byValue[value];
 
-  const RecommendStrategy._($core.int v, $core.String n) : super(v, n);
+  const RecommendStrategy._(super.v, super.n);
 }
 
 class Fusion extends $pb.ProtobufEnum {
@@ -117,7 +126,7 @@ class Fusion extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, Fusion> _byValue = $pb.ProtobufEnum.initByValue(values);
   static Fusion? valueOf($core.int value) => _byValue[value];
 
-  const Fusion._($core.int v, $core.String n) : super(v, n);
+  const Fusion._(super.v, super.n);
 }
 
 ///  Sample points from the collection
@@ -135,7 +144,7 @@ class Sample extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, Sample> _byValue = $pb.ProtobufEnum.initByValue(values);
   static Sample? valueOf($core.int value) => _byValue[value];
 
-  const Sample._($core.int v, $core.String n) : super(v, n);
+  const Sample._(super.v, super.n);
 }
 
 class UpdateStatus extends $pb.ProtobufEnum {
@@ -154,7 +163,7 @@ class UpdateStatus extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, UpdateStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
   static UpdateStatus? valueOf($core.int value) => _byValue[value];
 
-  const UpdateStatus._($core.int v, $core.String n) : super(v, n);
+  const UpdateStatus._(super.v, super.n);
 }
 
 

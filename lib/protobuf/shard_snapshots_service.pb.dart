@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: shard_snapshots_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,6 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'shard_snapshots_service.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'shard_snapshots_service.pbenum.dart';
 
@@ -69,7 +71,7 @@ class CreateShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -78,7 +80,7 @@ class CreateShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 }
 
 class ListShardSnapshotsRequest extends $pb.GeneratedMessage {
@@ -133,7 +135,7 @@ class ListShardSnapshotsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -142,7 +144,7 @@ class ListShardSnapshotsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 }
 
 class DeleteShardSnapshotRequest extends $pb.GeneratedMessage {
@@ -202,7 +204,7 @@ class DeleteShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -211,7 +213,7 @@ class DeleteShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get snapshotName => $_getSZ(2);
@@ -220,7 +222,7 @@ class DeleteShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasSnapshotName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSnapshotName() => clearField(3);
+  void clearSnapshotName() => $_clearField(3);
 }
 
 class RecoverShardSnapshotRequest extends $pb.GeneratedMessage {
@@ -295,7 +297,7 @@ class RecoverShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -304,27 +306,27 @@ class RecoverShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   ShardSnapshotLocation get snapshotLocation => $_getN(2);
   @$pb.TagNumber(3)
-  set snapshotLocation(ShardSnapshotLocation v) { setField(3, v); }
+  set snapshotLocation(ShardSnapshotLocation v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSnapshotLocation() => $_has(2);
   @$pb.TagNumber(3)
-  void clearSnapshotLocation() => clearField(3);
+  void clearSnapshotLocation() => $_clearField(3);
   @$pb.TagNumber(3)
   ShardSnapshotLocation ensureSnapshotLocation() => $_ensure(2);
 
   @$pb.TagNumber(4)
   ShardSnapshotPriority get snapshotPriority => $_getN(3);
   @$pb.TagNumber(4)
-  set snapshotPriority(ShardSnapshotPriority v) { setField(4, v); }
+  set snapshotPriority(ShardSnapshotPriority v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSnapshotPriority() => $_has(3);
   @$pb.TagNumber(4)
-  void clearSnapshotPriority() => clearField(4);
+  void clearSnapshotPriority() => $_clearField(4);
 
   @$pb.TagNumber(5)
   $core.String get checksum => $_getSZ(4);
@@ -333,7 +335,7 @@ class RecoverShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasChecksum() => $_has(4);
   @$pb.TagNumber(5)
-  void clearChecksum() => clearField(5);
+  void clearChecksum() => $_clearField(5);
 
   @$pb.TagNumber(6)
   $core.String get apiKey => $_getSZ(5);
@@ -342,7 +344,7 @@ class RecoverShardSnapshotRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasApiKey() => $_has(5);
   @$pb.TagNumber(6)
-  void clearApiKey() => clearField(6);
+  void clearApiKey() => $_clearField(6);
 }
 
 enum ShardSnapshotLocation_Location {
@@ -403,7 +405,7 @@ class ShardSnapshotLocation extends $pb.GeneratedMessage {
   static ShardSnapshotLocation? _defaultInstance;
 
   ShardSnapshotLocation_Location whichLocation() => _ShardSnapshotLocation_LocationByTag[$_whichOneof(0)]!;
-  void clearLocation() => clearField($_whichOneof(0));
+  void clearLocation() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   $core.String get url => $_getSZ(0);
@@ -412,7 +414,7 @@ class ShardSnapshotLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUrl() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUrl() => clearField(1);
+  void clearUrl() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get path => $_getSZ(1);
@@ -421,7 +423,7 @@ class ShardSnapshotLocation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPath() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPath() => clearField(2);
+  void clearPath() => $_clearField(2);
 }
 
 class RecoverSnapshotResponse extends $pb.GeneratedMessage {
@@ -471,7 +473,7 @@ class RecoverSnapshotResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTime() => clearField(1);
+  void clearTime() => $_clearField(1);
 }
 
 

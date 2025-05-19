@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: collections_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -74,11 +74,7 @@ class CollectionsClient extends $grpc.Client {
       ($1.DeleteShardKeyRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $1.DeleteShardKeyResponse.fromBuffer(value));
 
-  CollectionsClient($grpc.ClientChannel channel,
-      {$grpc.CallOptions? options,
-      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+  CollectionsClient(super.channel, {super.options, super.interceptors});
 
   $grpc.ResponseFuture<$1.GetCollectionInfoResponse> get($1.GetCollectionInfoRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$get, request, options: options);
@@ -231,56 +227,56 @@ abstract class CollectionsServiceBase extends $grpc.Service {
         ($1.DeleteShardKeyResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$1.GetCollectionInfoResponse> get_Pre($grpc.ServiceCall call, $async.Future<$1.GetCollectionInfoRequest> request) async {
-    return get(call, await request);
+  $async.Future<$1.GetCollectionInfoResponse> get_Pre($grpc.ServiceCall $call, $async.Future<$1.GetCollectionInfoRequest> $request) async {
+    return get($call, await $request);
   }
 
-  $async.Future<$1.ListCollectionsResponse> list_Pre($grpc.ServiceCall call, $async.Future<$1.ListCollectionsRequest> request) async {
-    return list(call, await request);
+  $async.Future<$1.ListCollectionsResponse> list_Pre($grpc.ServiceCall $call, $async.Future<$1.ListCollectionsRequest> $request) async {
+    return list($call, await $request);
   }
 
-  $async.Future<$1.CollectionOperationResponse> create_Pre($grpc.ServiceCall call, $async.Future<$1.CreateCollection> request) async {
-    return create(call, await request);
+  $async.Future<$1.CollectionOperationResponse> create_Pre($grpc.ServiceCall $call, $async.Future<$1.CreateCollection> $request) async {
+    return create($call, await $request);
   }
 
-  $async.Future<$1.CollectionOperationResponse> update_Pre($grpc.ServiceCall call, $async.Future<$1.UpdateCollection> request) async {
-    return update(call, await request);
+  $async.Future<$1.CollectionOperationResponse> update_Pre($grpc.ServiceCall $call, $async.Future<$1.UpdateCollection> $request) async {
+    return update($call, await $request);
   }
 
-  $async.Future<$1.CollectionOperationResponse> delete_Pre($grpc.ServiceCall call, $async.Future<$1.DeleteCollection> request) async {
-    return delete(call, await request);
+  $async.Future<$1.CollectionOperationResponse> delete_Pre($grpc.ServiceCall $call, $async.Future<$1.DeleteCollection> $request) async {
+    return delete($call, await $request);
   }
 
-  $async.Future<$1.CollectionOperationResponse> updateAliases_Pre($grpc.ServiceCall call, $async.Future<$1.ChangeAliases> request) async {
-    return updateAliases(call, await request);
+  $async.Future<$1.CollectionOperationResponse> updateAliases_Pre($grpc.ServiceCall $call, $async.Future<$1.ChangeAliases> $request) async {
+    return updateAliases($call, await $request);
   }
 
-  $async.Future<$1.ListAliasesResponse> listCollectionAliases_Pre($grpc.ServiceCall call, $async.Future<$1.ListCollectionAliasesRequest> request) async {
-    return listCollectionAliases(call, await request);
+  $async.Future<$1.ListAliasesResponse> listCollectionAliases_Pre($grpc.ServiceCall $call, $async.Future<$1.ListCollectionAliasesRequest> $request) async {
+    return listCollectionAliases($call, await $request);
   }
 
-  $async.Future<$1.ListAliasesResponse> listAliases_Pre($grpc.ServiceCall call, $async.Future<$1.ListAliasesRequest> request) async {
-    return listAliases(call, await request);
+  $async.Future<$1.ListAliasesResponse> listAliases_Pre($grpc.ServiceCall $call, $async.Future<$1.ListAliasesRequest> $request) async {
+    return listAliases($call, await $request);
   }
 
-  $async.Future<$1.CollectionClusterInfoResponse> collectionClusterInfo_Pre($grpc.ServiceCall call, $async.Future<$1.CollectionClusterInfoRequest> request) async {
-    return collectionClusterInfo(call, await request);
+  $async.Future<$1.CollectionClusterInfoResponse> collectionClusterInfo_Pre($grpc.ServiceCall $call, $async.Future<$1.CollectionClusterInfoRequest> $request) async {
+    return collectionClusterInfo($call, await $request);
   }
 
-  $async.Future<$1.CollectionExistsResponse> collectionExists_Pre($grpc.ServiceCall call, $async.Future<$1.CollectionExistsRequest> request) async {
-    return collectionExists(call, await request);
+  $async.Future<$1.CollectionExistsResponse> collectionExists_Pre($grpc.ServiceCall $call, $async.Future<$1.CollectionExistsRequest> $request) async {
+    return collectionExists($call, await $request);
   }
 
-  $async.Future<$1.UpdateCollectionClusterSetupResponse> updateCollectionClusterSetup_Pre($grpc.ServiceCall call, $async.Future<$1.UpdateCollectionClusterSetupRequest> request) async {
-    return updateCollectionClusterSetup(call, await request);
+  $async.Future<$1.UpdateCollectionClusterSetupResponse> updateCollectionClusterSetup_Pre($grpc.ServiceCall $call, $async.Future<$1.UpdateCollectionClusterSetupRequest> $request) async {
+    return updateCollectionClusterSetup($call, await $request);
   }
 
-  $async.Future<$1.CreateShardKeyResponse> createShardKey_Pre($grpc.ServiceCall call, $async.Future<$1.CreateShardKeyRequest> request) async {
-    return createShardKey(call, await request);
+  $async.Future<$1.CreateShardKeyResponse> createShardKey_Pre($grpc.ServiceCall $call, $async.Future<$1.CreateShardKeyRequest> $request) async {
+    return createShardKey($call, await $request);
   }
 
-  $async.Future<$1.DeleteShardKeyResponse> deleteShardKey_Pre($grpc.ServiceCall call, $async.Future<$1.DeleteShardKeyRequest> request) async {
-    return deleteShardKey(call, await request);
+  $async.Future<$1.DeleteShardKeyResponse> deleteShardKey_Pre($grpc.ServiceCall $call, $async.Future<$1.DeleteShardKeyRequest> $request) async {
+    return deleteShardKey($call, await $request);
   }
 
   $async.Future<$1.GetCollectionInfoResponse> get($grpc.ServiceCall call, $1.GetCollectionInfoRequest request);

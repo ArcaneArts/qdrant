@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: collections_internal_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -16,6 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'collections.pb.dart' as $1;
 import 'collections.pbenum.dart' as $1;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 class GetCollectionInfoRequestInternal extends $pb.GeneratedMessage {
   factory GetCollectionInfoRequestInternal({
@@ -65,11 +67,11 @@ class GetCollectionInfoRequestInternal extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $1.GetCollectionInfoRequest get getCollectionInfoRequest => $_getN(0);
   @$pb.TagNumber(1)
-  set getCollectionInfoRequest($1.GetCollectionInfoRequest v) { setField(1, v); }
+  set getCollectionInfoRequest($1.GetCollectionInfoRequest v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGetCollectionInfoRequest() => $_has(0);
   @$pb.TagNumber(1)
-  void clearGetCollectionInfoRequest() => clearField(1);
+  void clearGetCollectionInfoRequest() => $_clearField(1);
   @$pb.TagNumber(1)
   $1.GetCollectionInfoRequest ensureGetCollectionInfoRequest() => $_ensure(0);
 
@@ -80,7 +82,7 @@ class GetCollectionInfoRequestInternal extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 }
 
 class InitiateShardTransferRequest extends $pb.GeneratedMessage {
@@ -135,7 +137,7 @@ class InitiateShardTransferRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -144,7 +146,7 @@ class InitiateShardTransferRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 }
 
 class WaitForShardStateRequest extends $pb.GeneratedMessage {
@@ -209,7 +211,7 @@ class WaitForShardStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -218,16 +220,16 @@ class WaitForShardStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $1.ReplicaState get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state($1.ReplicaState v) { setField(3, v); }
+  set state($1.ReplicaState v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $fixnum.Int64 get timeout => $_getI64(3);
@@ -236,7 +238,7 @@ class WaitForShardStateRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasTimeout() => $_has(3);
   @$pb.TagNumber(4)
-  void clearTimeout() => clearField(4);
+  void clearTimeout() => $_clearField(4);
 }
 
 class GetShardRecoveryPointRequest extends $pb.GeneratedMessage {
@@ -291,7 +293,7 @@ class GetShardRecoveryPointRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -300,7 +302,7 @@ class GetShardRecoveryPointRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 }
 
 class GetShardRecoveryPointResponse extends $pb.GeneratedMessage {
@@ -351,11 +353,11 @@ class GetShardRecoveryPointResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   RecoveryPoint get recoveryPoint => $_getN(0);
   @$pb.TagNumber(1)
-  set recoveryPoint(RecoveryPoint v) { setField(1, v); }
+  set recoveryPoint(RecoveryPoint v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRecoveryPoint() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRecoveryPoint() => clearField(1);
+  void clearRecoveryPoint() => $_clearField(1);
   @$pb.TagNumber(1)
   RecoveryPoint ensureRecoveryPoint() => $_ensure(0);
 
@@ -366,7 +368,7 @@ class GetShardRecoveryPointResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTime() => clearField(2);
+  void clearTime() => $_clearField(2);
 }
 
 class RecoveryPoint extends $pb.GeneratedMessage {
@@ -410,7 +412,7 @@ class RecoveryPoint extends $pb.GeneratedMessage {
   static RecoveryPoint? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<RecoveryPointClockTag> get clocks => $_getList(0);
+  $pb.PbList<RecoveryPointClockTag> get clocks => $_getList(0);
 }
 
 class RecoveryPointClockTag extends $pb.GeneratedMessage {
@@ -475,7 +477,7 @@ class RecoveryPointClockTag extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPeerId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPeerId() => clearField(1);
+  void clearPeerId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get clockId => $_getIZ(1);
@@ -484,7 +486,7 @@ class RecoveryPointClockTag extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasClockId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearClockId() => clearField(2);
+  void clearClockId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get clockTick => $_getI64(2);
@@ -493,7 +495,7 @@ class RecoveryPointClockTag extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasClockTick() => $_has(2);
   @$pb.TagNumber(3)
-  void clearClockTick() => clearField(3);
+  void clearClockTick() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $fixnum.Int64 get token => $_getI64(3);
@@ -502,7 +504,7 @@ class RecoveryPointClockTag extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasToken() => $_has(3);
   @$pb.TagNumber(4)
-  void clearToken() => clearField(4);
+  void clearToken() => $_clearField(4);
 }
 
 class UpdateShardCutoffPointRequest extends $pb.GeneratedMessage {
@@ -562,7 +564,7 @@ class UpdateShardCutoffPointRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get shardId => $_getIZ(1);
@@ -571,16 +573,16 @@ class UpdateShardCutoffPointRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardId() => clearField(2);
+  void clearShardId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   RecoveryPoint get cutoff => $_getN(2);
   @$pb.TagNumber(3)
-  set cutoff(RecoveryPoint v) { setField(3, v); }
+  set cutoff(RecoveryPoint v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCutoff() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCutoff() => clearField(3);
+  void clearCutoff() => $_clearField(3);
   @$pb.TagNumber(3)
   RecoveryPoint ensureCutoff() => $_ensure(2);
 }

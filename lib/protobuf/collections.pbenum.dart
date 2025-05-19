@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: collections.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -29,7 +29,7 @@ class Datatype extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, Datatype> _byValue = $pb.ProtobufEnum.initByValue(values);
   static Datatype? valueOf($core.int value) => _byValue[value];
 
-  const Datatype._($core.int v, $core.String n) : super(v, n);
+  const Datatype._(super.v, super.n);
 }
 
 class Modifier extends $pb.ProtobufEnum {
@@ -44,7 +44,7 @@ class Modifier extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, Modifier> _byValue = $pb.ProtobufEnum.initByValue(values);
   static Modifier? valueOf($core.int value) => _byValue[value];
 
-  const Modifier._($core.int v, $core.String n) : super(v, n);
+  const Modifier._(super.v, super.n);
 }
 
 class MultiVectorComparator extends $pb.ProtobufEnum {
@@ -57,7 +57,7 @@ class MultiVectorComparator extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, MultiVectorComparator> _byValue = $pb.ProtobufEnum.initByValue(values);
   static MultiVectorComparator? valueOf($core.int value) => _byValue[value];
 
-  const MultiVectorComparator._($core.int v, $core.String n) : super(v, n);
+  const MultiVectorComparator._(super.v, super.n);
 }
 
 class Distance extends $pb.ProtobufEnum {
@@ -78,7 +78,7 @@ class Distance extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, Distance> _byValue = $pb.ProtobufEnum.initByValue(values);
   static Distance? valueOf($core.int value) => _byValue[value];
 
-  const Distance._($core.int v, $core.String n) : super(v, n);
+  const Distance._(super.v, super.n);
 }
 
 class CollectionStatus extends $pb.ProtobufEnum {
@@ -99,7 +99,7 @@ class CollectionStatus extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, CollectionStatus> _byValue = $pb.ProtobufEnum.initByValue(values);
   static CollectionStatus? valueOf($core.int value) => _byValue[value];
 
-  const CollectionStatus._($core.int v, $core.String n) : super(v, n);
+  const CollectionStatus._(super.v, super.n);
 }
 
 class PayloadSchemaType extends $pb.ProtobufEnum {
@@ -128,7 +128,7 @@ class PayloadSchemaType extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, PayloadSchemaType> _byValue = $pb.ProtobufEnum.initByValue(values);
   static PayloadSchemaType? valueOf($core.int value) => _byValue[value];
 
-  const PayloadSchemaType._($core.int v, $core.String n) : super(v, n);
+  const PayloadSchemaType._(super.v, super.n);
 }
 
 class QuantizationType extends $pb.ProtobufEnum {
@@ -143,7 +143,7 @@ class QuantizationType extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, QuantizationType> _byValue = $pb.ProtobufEnum.initByValue(values);
   static QuantizationType? valueOf($core.int value) => _byValue[value];
 
-  const QuantizationType._($core.int v, $core.String n) : super(v, n);
+  const QuantizationType._(super.v, super.n);
 }
 
 class CompressionRatio extends $pb.ProtobufEnum {
@@ -164,7 +164,7 @@ class CompressionRatio extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, CompressionRatio> _byValue = $pb.ProtobufEnum.initByValue(values);
   static CompressionRatio? valueOf($core.int value) => _byValue[value];
 
-  const CompressionRatio._($core.int v, $core.String n) : super(v, n);
+  const CompressionRatio._(super.v, super.n);
 }
 
 class ShardingMethod extends $pb.ProtobufEnum {
@@ -179,7 +179,7 @@ class ShardingMethod extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, ShardingMethod> _byValue = $pb.ProtobufEnum.initByValue(values);
   static ShardingMethod? valueOf($core.int value) => _byValue[value];
 
-  const ShardingMethod._($core.int v, $core.String n) : super(v, n);
+  const ShardingMethod._(super.v, super.n);
 }
 
 class TokenizerType extends $pb.ProtobufEnum {
@@ -200,7 +200,7 @@ class TokenizerType extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, TokenizerType> _byValue = $pb.ProtobufEnum.initByValue(values);
   static TokenizerType? valueOf($core.int value) => _byValue[value];
 
-  const TokenizerType._($core.int v, $core.String n) : super(v, n);
+  const TokenizerType._(super.v, super.n);
 }
 
 class ReplicaState extends $pb.ProtobufEnum {
@@ -229,7 +229,7 @@ class ReplicaState extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, ReplicaState> _byValue = $pb.ProtobufEnum.initByValue(values);
   static ReplicaState? valueOf($core.int value) => _byValue[value];
 
-  const ReplicaState._($core.int v, $core.String n) : super(v, n);
+  const ReplicaState._(super.v, super.n);
 }
 
 ///
@@ -246,7 +246,7 @@ class ReshardingDirection extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, ReshardingDirection> _byValue = $pb.ProtobufEnum.initByValue(values);
   static ReshardingDirection? valueOf($core.int value) => _byValue[value];
 
-  const ReshardingDirection._($core.int v, $core.String n) : super(v, n);
+  const ReshardingDirection._(super.v, super.n);
 }
 
 class ShardTransferMethod extends $pb.ProtobufEnum {
@@ -265,7 +265,7 @@ class ShardTransferMethod extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, ShardTransferMethod> _byValue = $pb.ProtobufEnum.initByValue(values);
   static ShardTransferMethod? valueOf($core.int value) => _byValue[value];
 
-  const ShardTransferMethod._($core.int v, $core.String n) : super(v, n);
+  const ShardTransferMethod._(super.v, super.n);
 }
 
 class MaxOptimizationThreads_Setting extends $pb.ProtobufEnum {
@@ -278,7 +278,7 @@ class MaxOptimizationThreads_Setting extends $pb.ProtobufEnum {
   static final $core.Map<$core.int, MaxOptimizationThreads_Setting> _byValue = $pb.ProtobufEnum.initByValue(values);
   static MaxOptimizationThreads_Setting? valueOf($core.int value) => _byValue[value];
 
-  const MaxOptimizationThreads_Setting._($core.int v, $core.String n) : super(v, n);
+  const MaxOptimizationThreads_Setting._(super.v, super.n);
 }
 
 

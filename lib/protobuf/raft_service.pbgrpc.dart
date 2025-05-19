@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: raft_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,55 +14,46 @@ import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
-import 'package:qdrant/google/protobuf/empty.pb.dart' as $7;
 
-import 'raft_service.pb.dart' as $6;
+import 'google/protobuf/empty.pb.dart' as $8;
+import 'raft_service.pb.dart' as $7;
 
 export 'raft_service.pb.dart';
 
 @$pb.GrpcServiceName('qdrant.Raft')
 class RaftClient extends $grpc.Client {
-  static final _$send = $grpc.ClientMethod<$6.RaftMessage, $7.Empty>(
+  static final _$send = $grpc.ClientMethod<$7.RaftMessage, $8.Empty>(
       '/qdrant.Raft/Send',
-      ($6.RaftMessage value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.Empty.fromBuffer(value));
-  static final _$whoIs = $grpc.ClientMethod<$6.PeerId, $6.Uri>(
+      ($7.RaftMessage value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $8.Empty.fromBuffer(value));
+  static final _$whoIs = $grpc.ClientMethod<$7.PeerId, $7.Uri>(
       '/qdrant.Raft/WhoIs',
-      ($6.PeerId value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $6.Uri.fromBuffer(value));
-  static final _$addPeerToKnown =
-      $grpc.ClientMethod<$6.AddPeerToKnownMessage, $6.AllPeers>(
-          '/qdrant.Raft/AddPeerToKnown',
-          ($6.AddPeerToKnownMessage value) => value.writeToBuffer(),
-          ($core.List<$core.int> value) => $6.AllPeers.fromBuffer(value));
-  static final _$addPeerAsParticipant = $grpc.ClientMethod<$6.PeerId, $7.Empty>(
+      ($7.PeerId value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $7.Uri.fromBuffer(value));
+  static final _$addPeerToKnown = $grpc.ClientMethod<$7.AddPeerToKnownMessage, $7.AllPeers>(
+      '/qdrant.Raft/AddPeerToKnown',
+      ($7.AddPeerToKnownMessage value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $7.AllPeers.fromBuffer(value));
+  static final _$addPeerAsParticipant = $grpc.ClientMethod<$7.PeerId, $8.Empty>(
       '/qdrant.Raft/AddPeerAsParticipant',
-      ($6.PeerId value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.Empty.fromBuffer(value));
+      ($7.PeerId value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $8.Empty.fromBuffer(value));
 
-  RaftClient($grpc.ClientChannel channel,
-      {$grpc.CallOptions? options,
-      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options, interceptors: interceptors);
+  RaftClient(super.channel, {super.options, super.interceptors});
 
-  $grpc.ResponseFuture<$7.Empty> send($6.RaftMessage request,
-      {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$8.Empty> send($7.RaftMessage request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$send, request, options: options);
   }
 
-  $grpc.ResponseFuture<$6.Uri> whoIs($6.PeerId request,
-      {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$7.Uri> whoIs($7.PeerId request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$whoIs, request, options: options);
   }
 
-  $grpc.ResponseFuture<$6.AllPeers> addPeerToKnown(
-      $6.AddPeerToKnownMessage request,
-      {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$7.AllPeers> addPeerToKnown($7.AddPeerToKnownMessage request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$addPeerToKnown, request, options: options);
   }
 
-  $grpc.ResponseFuture<$7.Empty> addPeerAsParticipant($6.PeerId request,
-      {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$8.Empty> addPeerAsParticipant($7.PeerId request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$addPeerAsParticipant, request, options: options);
   }
 }
@@ -72,61 +63,54 @@ abstract class RaftServiceBase extends $grpc.Service {
   $core.String get $name => 'qdrant.Raft';
 
   RaftServiceBase() {
-    $addMethod($grpc.ServiceMethod<$6.RaftMessage, $7.Empty>(
+    $addMethod($grpc.ServiceMethod<$7.RaftMessage, $8.Empty>(
         'Send',
         send_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $6.RaftMessage.fromBuffer(value),
-        ($7.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$6.PeerId, $6.Uri>(
+        ($core.List<$core.int> value) => $7.RaftMessage.fromBuffer(value),
+        ($8.Empty value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$7.PeerId, $7.Uri>(
         'WhoIs',
         whoIs_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $6.PeerId.fromBuffer(value),
-        ($6.Uri value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$6.AddPeerToKnownMessage, $6.AllPeers>(
+        ($core.List<$core.int> value) => $7.PeerId.fromBuffer(value),
+        ($7.Uri value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$7.AddPeerToKnownMessage, $7.AllPeers>(
         'AddPeerToKnown',
         addPeerToKnown_Pre,
         false,
         false,
-        ($core.List<$core.int> value) =>
-            $6.AddPeerToKnownMessage.fromBuffer(value),
-        ($6.AllPeers value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$6.PeerId, $7.Empty>(
+        ($core.List<$core.int> value) => $7.AddPeerToKnownMessage.fromBuffer(value),
+        ($7.AllPeers value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$7.PeerId, $8.Empty>(
         'AddPeerAsParticipant',
         addPeerAsParticipant_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $6.PeerId.fromBuffer(value),
-        ($7.Empty value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $7.PeerId.fromBuffer(value),
+        ($8.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.Empty> send_Pre(
-      $grpc.ServiceCall call, $async.Future<$6.RaftMessage> request) async {
-    return send(call, await request);
+  $async.Future<$8.Empty> send_Pre($grpc.ServiceCall $call, $async.Future<$7.RaftMessage> $request) async {
+    return send($call, await $request);
   }
 
-  $async.Future<$6.Uri> whoIs_Pre(
-      $grpc.ServiceCall call, $async.Future<$6.PeerId> request) async {
-    return whoIs(call, await request);
+  $async.Future<$7.Uri> whoIs_Pre($grpc.ServiceCall $call, $async.Future<$7.PeerId> $request) async {
+    return whoIs($call, await $request);
   }
 
-  $async.Future<$6.AllPeers> addPeerToKnown_Pre($grpc.ServiceCall call,
-      $async.Future<$6.AddPeerToKnownMessage> request) async {
-    return addPeerToKnown(call, await request);
+  $async.Future<$7.AllPeers> addPeerToKnown_Pre($grpc.ServiceCall $call, $async.Future<$7.AddPeerToKnownMessage> $request) async {
+    return addPeerToKnown($call, await $request);
   }
 
-  $async.Future<$7.Empty> addPeerAsParticipant_Pre(
-      $grpc.ServiceCall call, $async.Future<$6.PeerId> request) async {
-    return addPeerAsParticipant(call, await request);
+  $async.Future<$8.Empty> addPeerAsParticipant_Pre($grpc.ServiceCall $call, $async.Future<$7.PeerId> $request) async {
+    return addPeerAsParticipant($call, await $request);
   }
 
-  $async.Future<$7.Empty> send($grpc.ServiceCall call, $6.RaftMessage request);
-  $async.Future<$6.Uri> whoIs($grpc.ServiceCall call, $6.PeerId request);
-  $async.Future<$6.AllPeers> addPeerToKnown(
-      $grpc.ServiceCall call, $6.AddPeerToKnownMessage request);
-  $async.Future<$7.Empty> addPeerAsParticipant(
-      $grpc.ServiceCall call, $6.PeerId request);
+  $async.Future<$8.Empty> send($grpc.ServiceCall call, $7.RaftMessage request);
+  $async.Future<$7.Uri> whoIs($grpc.ServiceCall call, $7.PeerId request);
+  $async.Future<$7.AllPeers> addPeerToKnown($grpc.ServiceCall call, $7.AddPeerToKnownMessage request);
+  $async.Future<$8.Empty> addPeerAsParticipant($grpc.ServiceCall call, $7.PeerId request);
 }

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: qdrant.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -12,6 +12,8 @@
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 class HealthCheckRequest extends $pb.GeneratedMessage {
   factory HealthCheckRequest() => create();
@@ -102,7 +104,7 @@ class HealthCheckReply extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTitle() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTitle() => clearField(1);
+  void clearTitle() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get version => $_getSZ(1);
@@ -111,7 +113,7 @@ class HealthCheckReply extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVersion() => clearField(2);
+  void clearVersion() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.String get commit => $_getSZ(2);
@@ -120,7 +122,7 @@ class HealthCheckReply extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCommit() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCommit() => clearField(3);
+  void clearCommit() => $_clearField(3);
 }
 
 

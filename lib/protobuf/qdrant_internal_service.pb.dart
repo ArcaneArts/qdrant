@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: qdrant_internal_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,6 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 class GetConsensusCommitRequest extends $pb.GeneratedMessage {
   factory GetConsensusCommitRequest() => create();
@@ -98,7 +100,7 @@ class GetConsensusCommitResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCommit() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCommit() => clearField(1);
+  void clearCommit() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get term => $_getI64(1);
@@ -107,7 +109,7 @@ class GetConsensusCommitResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTerm() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTerm() => clearField(2);
+  void clearTerm() => $_clearField(2);
 }
 
 class WaitOnConsensusCommitRequest extends $pb.GeneratedMessage {
@@ -167,7 +169,7 @@ class WaitOnConsensusCommitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCommit() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCommit() => clearField(1);
+  void clearCommit() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get term => $_getI64(1);
@@ -176,7 +178,7 @@ class WaitOnConsensusCommitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTerm() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTerm() => clearField(2);
+  void clearTerm() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get timeout => $_getI64(2);
@@ -185,7 +187,7 @@ class WaitOnConsensusCommitRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTimeout() => clearField(3);
+  void clearTimeout() => $_clearField(3);
 }
 
 class WaitOnConsensusCommitResponse extends $pb.GeneratedMessage {
@@ -235,7 +237,7 @@ class WaitOnConsensusCommitResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasOk() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOk() => clearField(1);
+  void clearOk() => $_clearField(1);
 }
 
 

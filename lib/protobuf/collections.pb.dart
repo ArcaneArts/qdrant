@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: collections.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,6 +15,8 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'collections.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'collections.pbenum.dart';
 
@@ -95,36 +97,36 @@ class VectorParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasSize() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSize() => clearField(1);
+  void clearSize() => $_clearField(1);
 
   @$pb.TagNumber(2)
   Distance get distance => $_getN(1);
   @$pb.TagNumber(2)
-  set distance(Distance v) { setField(2, v); }
+  set distance(Distance v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDistance() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDistance() => clearField(2);
+  void clearDistance() => $_clearField(2);
 
   @$pb.TagNumber(3)
   HnswConfigDiff get hnswConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set hnswConfig(HnswConfigDiff v) { setField(3, v); }
+  set hnswConfig(HnswConfigDiff v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasHnswConfig() => $_has(2);
   @$pb.TagNumber(3)
-  void clearHnswConfig() => clearField(3);
+  void clearHnswConfig() => $_clearField(3);
   @$pb.TagNumber(3)
   HnswConfigDiff ensureHnswConfig() => $_ensure(2);
 
   @$pb.TagNumber(4)
   QuantizationConfig get quantizationConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set quantizationConfig(QuantizationConfig v) { setField(4, v); }
+  set quantizationConfig(QuantizationConfig v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasQuantizationConfig() => $_has(3);
   @$pb.TagNumber(4)
-  void clearQuantizationConfig() => clearField(4);
+  void clearQuantizationConfig() => $_clearField(4);
   @$pb.TagNumber(4)
   QuantizationConfig ensureQuantizationConfig() => $_ensure(3);
 
@@ -135,25 +137,25 @@ class VectorParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasOnDisk() => $_has(4);
   @$pb.TagNumber(5)
-  void clearOnDisk() => clearField(5);
+  void clearOnDisk() => $_clearField(5);
 
   @$pb.TagNumber(6)
   Datatype get datatype => $_getN(5);
   @$pb.TagNumber(6)
-  set datatype(Datatype v) { setField(6, v); }
+  set datatype(Datatype v) { $_setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDatatype() => $_has(5);
   @$pb.TagNumber(6)
-  void clearDatatype() => clearField(6);
+  void clearDatatype() => $_clearField(6);
 
   @$pb.TagNumber(7)
   MultiVectorConfig get multivectorConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set multivectorConfig(MultiVectorConfig v) { setField(7, v); }
+  set multivectorConfig(MultiVectorConfig v) { $_setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasMultivectorConfig() => $_has(6);
   @$pb.TagNumber(7)
-  void clearMultivectorConfig() => clearField(7);
+  void clearMultivectorConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   MultiVectorConfig ensureMultivectorConfig() => $_ensure(6);
 }
@@ -211,22 +213,22 @@ class VectorParamsDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   HnswConfigDiff get hnswConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set hnswConfig(HnswConfigDiff v) { setField(1, v); }
+  set hnswConfig(HnswConfigDiff v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHnswConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearHnswConfig() => clearField(1);
+  void clearHnswConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   HnswConfigDiff ensureHnswConfig() => $_ensure(0);
 
   @$pb.TagNumber(2)
   QuantizationConfigDiff get quantizationConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set quantizationConfig(QuantizationConfigDiff v) { setField(2, v); }
+  set quantizationConfig(QuantizationConfigDiff v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasQuantizationConfig() => $_has(1);
   @$pb.TagNumber(2)
-  void clearQuantizationConfig() => clearField(2);
+  void clearQuantizationConfig() => $_clearField(2);
   @$pb.TagNumber(2)
   QuantizationConfigDiff ensureQuantizationConfig() => $_ensure(1);
 
@@ -237,16 +239,16 @@ class VectorParamsDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasOnDisk() => $_has(2);
   @$pb.TagNumber(3)
-  void clearOnDisk() => clearField(3);
+  void clearOnDisk() => $_clearField(3);
 }
 
 class VectorParamsMap extends $pb.GeneratedMessage {
   factory VectorParamsMap({
-    $core.Map<$core.String, VectorParams>? map,
+    $core.Iterable<$core.MapEntry<$core.String, VectorParams>>? map,
   }) {
     final $result = create();
     if (map != null) {
-      $result.map.addAll(map);
+      $result.map.addEntries(map);
     }
     return $result;
   }
@@ -281,16 +283,16 @@ class VectorParamsMap extends $pb.GeneratedMessage {
   static VectorParamsMap? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.Map<$core.String, VectorParams> get map => $_getMap(0);
+  $pb.PbMap<$core.String, VectorParams> get map => $_getMap(0);
 }
 
 class VectorParamsDiffMap extends $pb.GeneratedMessage {
   factory VectorParamsDiffMap({
-    $core.Map<$core.String, VectorParamsDiff>? map,
+    $core.Iterable<$core.MapEntry<$core.String, VectorParamsDiff>>? map,
   }) {
     final $result = create();
     if (map != null) {
-      $result.map.addAll(map);
+      $result.map.addEntries(map);
     }
     return $result;
   }
@@ -325,7 +327,7 @@ class VectorParamsDiffMap extends $pb.GeneratedMessage {
   static VectorParamsDiffMap? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.Map<$core.String, VectorParamsDiff> get map => $_getMap(0);
+  $pb.PbMap<$core.String, VectorParamsDiff> get map => $_getMap(0);
 }
 
 enum VectorsConfig_Config {
@@ -386,27 +388,27 @@ class VectorsConfig extends $pb.GeneratedMessage {
   static VectorsConfig? _defaultInstance;
 
   VectorsConfig_Config whichConfig() => _VectorsConfig_ConfigByTag[$_whichOneof(0)]!;
-  void clearConfig() => clearField($_whichOneof(0));
+  void clearConfig() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   VectorParams get params => $_getN(0);
   @$pb.TagNumber(1)
-  set params(VectorParams v) { setField(1, v); }
+  set params(VectorParams v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasParams() => $_has(0);
   @$pb.TagNumber(1)
-  void clearParams() => clearField(1);
+  void clearParams() => $_clearField(1);
   @$pb.TagNumber(1)
   VectorParams ensureParams() => $_ensure(0);
 
   @$pb.TagNumber(2)
   VectorParamsMap get paramsMap => $_getN(1);
   @$pb.TagNumber(2)
-  set paramsMap(VectorParamsMap v) { setField(2, v); }
+  set paramsMap(VectorParamsMap v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasParamsMap() => $_has(1);
   @$pb.TagNumber(2)
-  void clearParamsMap() => clearField(2);
+  void clearParamsMap() => $_clearField(2);
   @$pb.TagNumber(2)
   VectorParamsMap ensureParamsMap() => $_ensure(1);
 }
@@ -469,27 +471,27 @@ class VectorsConfigDiff extends $pb.GeneratedMessage {
   static VectorsConfigDiff? _defaultInstance;
 
   VectorsConfigDiff_Config whichConfig() => _VectorsConfigDiff_ConfigByTag[$_whichOneof(0)]!;
-  void clearConfig() => clearField($_whichOneof(0));
+  void clearConfig() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   VectorParamsDiff get params => $_getN(0);
   @$pb.TagNumber(1)
-  set params(VectorParamsDiff v) { setField(1, v); }
+  set params(VectorParamsDiff v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasParams() => $_has(0);
   @$pb.TagNumber(1)
-  void clearParams() => clearField(1);
+  void clearParams() => $_clearField(1);
   @$pb.TagNumber(1)
   VectorParamsDiff ensureParams() => $_ensure(0);
 
   @$pb.TagNumber(2)
   VectorParamsDiffMap get paramsMap => $_getN(1);
   @$pb.TagNumber(2)
-  set paramsMap(VectorParamsDiffMap v) { setField(2, v); }
+  set paramsMap(VectorParamsDiffMap v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasParamsMap() => $_has(1);
   @$pb.TagNumber(2)
-  void clearParamsMap() => clearField(2);
+  void clearParamsMap() => $_clearField(2);
   @$pb.TagNumber(2)
   VectorParamsDiffMap ensureParamsMap() => $_ensure(1);
 }
@@ -542,31 +544,31 @@ class SparseVectorParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   SparseIndexConfig get index => $_getN(0);
   @$pb.TagNumber(1)
-  set index(SparseIndexConfig v) { setField(1, v); }
+  set index(SparseIndexConfig v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasIndex() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIndex() => clearField(1);
+  void clearIndex() => $_clearField(1);
   @$pb.TagNumber(1)
   SparseIndexConfig ensureIndex() => $_ensure(0);
 
   @$pb.TagNumber(2)
   Modifier get modifier => $_getN(1);
   @$pb.TagNumber(2)
-  set modifier(Modifier v) { setField(2, v); }
+  set modifier(Modifier v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasModifier() => $_has(1);
   @$pb.TagNumber(2)
-  void clearModifier() => clearField(2);
+  void clearModifier() => $_clearField(2);
 }
 
 class SparseVectorConfig extends $pb.GeneratedMessage {
   factory SparseVectorConfig({
-    $core.Map<$core.String, SparseVectorParams>? map,
+    $core.Iterable<$core.MapEntry<$core.String, SparseVectorParams>>? map,
   }) {
     final $result = create();
     if (map != null) {
-      $result.map.addAll(map);
+      $result.map.addEntries(map);
     }
     return $result;
   }
@@ -601,7 +603,7 @@ class SparseVectorConfig extends $pb.GeneratedMessage {
   static SparseVectorConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.Map<$core.String, SparseVectorParams> get map => $_getMap(0);
+  $pb.PbMap<$core.String, SparseVectorParams> get map => $_getMap(0);
 }
 
 class MultiVectorConfig extends $pb.GeneratedMessage {
@@ -647,11 +649,11 @@ class MultiVectorConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   MultiVectorComparator get comparator => $_getN(0);
   @$pb.TagNumber(1)
-  set comparator(MultiVectorComparator v) { setField(1, v); }
+  set comparator(MultiVectorComparator v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasComparator() => $_has(0);
   @$pb.TagNumber(1)
-  void clearComparator() => clearField(1);
+  void clearComparator() => $_clearField(1);
 }
 
 class GetCollectionInfoRequest extends $pb.GeneratedMessage {
@@ -701,7 +703,7 @@ class GetCollectionInfoRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 }
 
 class CollectionExistsRequest extends $pb.GeneratedMessage {
@@ -751,7 +753,7 @@ class CollectionExistsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 }
 
 class CollectionExists extends $pb.GeneratedMessage {
@@ -801,7 +803,7 @@ class CollectionExists extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasExists() => $_has(0);
   @$pb.TagNumber(1)
-  void clearExists() => clearField(1);
+  void clearExists() => $_clearField(1);
 }
 
 class CollectionExistsResponse extends $pb.GeneratedMessage {
@@ -852,11 +854,11 @@ class CollectionExistsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CollectionExists get result => $_getN(0);
   @$pb.TagNumber(1)
-  set result(CollectionExists v) { setField(1, v); }
+  set result(CollectionExists v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResult() => clearField(1);
+  void clearResult() => $_clearField(1);
   @$pb.TagNumber(1)
   CollectionExists ensureResult() => $_ensure(0);
 
@@ -867,7 +869,7 @@ class CollectionExistsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTime() => clearField(2);
+  void clearTime() => $_clearField(2);
 }
 
 class ListCollectionsRequest extends $pb.GeneratedMessage {
@@ -949,7 +951,7 @@ class CollectionDescription extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
 class GetCollectionInfoResponse extends $pb.GeneratedMessage {
@@ -1000,11 +1002,11 @@ class GetCollectionInfoResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CollectionInfo get result => $_getN(0);
   @$pb.TagNumber(1)
-  set result(CollectionInfo v) { setField(1, v); }
+  set result(CollectionInfo v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResult() => clearField(1);
+  void clearResult() => $_clearField(1);
   @$pb.TagNumber(1)
   CollectionInfo ensureResult() => $_ensure(0);
 
@@ -1015,7 +1017,7 @@ class GetCollectionInfoResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTime() => clearField(2);
+  void clearTime() => $_clearField(2);
 }
 
 class ListCollectionsResponse extends $pb.GeneratedMessage {
@@ -1064,7 +1066,7 @@ class ListCollectionsResponse extends $pb.GeneratedMessage {
   static ListCollectionsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<CollectionDescription> get collections => $_getList(0);
+  $pb.PbList<CollectionDescription> get collections => $_getList(0);
 
   @$pb.TagNumber(2)
   $core.double get time => $_getN(1);
@@ -1073,7 +1075,7 @@ class ListCollectionsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTime() => clearField(2);
+  void clearTime() => $_clearField(2);
 }
 
 enum MaxOptimizationThreads_Variant {
@@ -1134,7 +1136,7 @@ class MaxOptimizationThreads extends $pb.GeneratedMessage {
   static MaxOptimizationThreads? _defaultInstance;
 
   MaxOptimizationThreads_Variant whichVariant() => _MaxOptimizationThreads_VariantByTag[$_whichOneof(0)]!;
-  void clearVariant() => clearField($_whichOneof(0));
+  void clearVariant() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   $fixnum.Int64 get value => $_getI64(0);
@@ -1143,16 +1145,16 @@ class MaxOptimizationThreads extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 
   @$pb.TagNumber(2)
   MaxOptimizationThreads_Setting get setting => $_getN(1);
   @$pb.TagNumber(2)
-  set setting(MaxOptimizationThreads_Setting v) { setField(2, v); }
+  set setting(MaxOptimizationThreads_Setting v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSetting() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSetting() => clearField(2);
+  void clearSetting() => $_clearField(2);
 }
 
 class OptimizerStatus extends $pb.GeneratedMessage {
@@ -1207,7 +1209,7 @@ class OptimizerStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasOk() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOk() => clearField(1);
+  void clearOk() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get error => $_getSZ(1);
@@ -1216,7 +1218,7 @@ class OptimizerStatus extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
-  void clearError() => clearField(2);
+  void clearError() => $_clearField(2);
 }
 
 class HnswConfigDiff extends $pb.GeneratedMessage {
@@ -1293,7 +1295,7 @@ class HnswConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasM() => $_has(0);
   @$pb.TagNumber(1)
-  void clearM() => clearField(1);
+  void clearM() => $_clearField(1);
 
   ///
   /// Number of neighbours to consider during the index building. Larger the value - more accurate the search, more time required to build the index.
@@ -1304,7 +1306,7 @@ class HnswConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEfConstruct() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEfConstruct() => clearField(2);
+  void clearEfConstruct() => $_clearField(2);
 
   ///
   /// Minimal size (in KiloBytes) of vectors for additional payload-based indexing.
@@ -1318,7 +1320,7 @@ class HnswConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasFullScanThreshold() => $_has(2);
   @$pb.TagNumber(3)
-  void clearFullScanThreshold() => clearField(3);
+  void clearFullScanThreshold() => $_clearField(3);
 
   ///
   /// Number of parallel threads used for background index building.
@@ -1332,7 +1334,7 @@ class HnswConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMaxIndexingThreads() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMaxIndexingThreads() => clearField(4);
+  void clearMaxIndexingThreads() => $_clearField(4);
 
   ///
   /// Store HNSW index on disk. If set to false, the index will be stored in RAM.
@@ -1343,7 +1345,7 @@ class HnswConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasOnDisk() => $_has(4);
   @$pb.TagNumber(5)
-  void clearOnDisk() => clearField(5);
+  void clearOnDisk() => $_clearField(5);
 
   ///
   /// Number of additional payload-aware links per node in the index graph. If not set - regular M parameter will be used.
@@ -1354,7 +1356,7 @@ class HnswConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasPayloadM() => $_has(5);
   @$pb.TagNumber(6)
-  void clearPayloadM() => clearField(6);
+  void clearPayloadM() => $_clearField(6);
 }
 
 class SparseIndexConfig extends $pb.GeneratedMessage {
@@ -1417,7 +1419,7 @@ class SparseIndexConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasFullScanThreshold() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFullScanThreshold() => clearField(1);
+  void clearFullScanThreshold() => $_clearField(1);
 
   ///
   /// Store inverted index on disk. If set to false, the index will be stored in RAM.
@@ -1428,18 +1430,18 @@ class SparseIndexConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasOnDisk() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOnDisk() => clearField(2);
+  void clearOnDisk() => $_clearField(2);
 
   ///
   /// Datatype used to store weights in the index.
   @$pb.TagNumber(3)
   Datatype get datatype => $_getN(2);
   @$pb.TagNumber(3)
-  set datatype(Datatype v) { setField(3, v); }
+  set datatype(Datatype v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDatatype() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDatatype() => clearField(3);
+  void clearDatatype() => $_clearField(3);
 }
 
 class WalConfigDiff extends $pb.GeneratedMessage {
@@ -1494,7 +1496,7 @@ class WalConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasWalCapacityMb() => $_has(0);
   @$pb.TagNumber(1)
-  void clearWalCapacityMb() => clearField(1);
+  void clearWalCapacityMb() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get walSegmentsAhead => $_getI64(1);
@@ -1503,7 +1505,7 @@ class WalConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasWalSegmentsAhead() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWalSegmentsAhead() => clearField(2);
+  void clearWalSegmentsAhead() => $_clearField(2);
 }
 
 class OptimizersConfigDiff extends $pb.GeneratedMessage {
@@ -1595,7 +1597,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasDeletedThreshold() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDeletedThreshold() => clearField(1);
+  void clearDeletedThreshold() => $_clearField(1);
 
   ///
   /// The minimal number of vectors in a segment, required to perform segment optimization
@@ -1606,7 +1608,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasVacuumMinVectorNumber() => $_has(1);
   @$pb.TagNumber(2)
-  void clearVacuumMinVectorNumber() => clearField(2);
+  void clearVacuumMinVectorNumber() => $_clearField(2);
 
   ///
   /// Target amount of segments the optimizer will try to keep.
@@ -1624,7 +1626,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDefaultSegmentNumber() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDefaultSegmentNumber() => clearField(3);
+  void clearDefaultSegmentNumber() => $_clearField(3);
 
   ///
   /// Do not create segments larger this size (in kilobytes).
@@ -1642,7 +1644,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMaxSegmentSize() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMaxSegmentSize() => clearField(4);
+  void clearMaxSegmentSize() => $_clearField(4);
 
   ///
   /// Maximum size (in kilobytes) of vectors to store in-memory per segment.
@@ -1660,7 +1662,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasMemmapThreshold() => $_has(4);
   @$pb.TagNumber(5)
-  void clearMemmapThreshold() => clearField(5);
+  void clearMemmapThreshold() => $_clearField(5);
 
   ///
   /// Maximum size (in kilobytes) of vectors allowed for plain index, exceeding this threshold will enable vector indexing
@@ -1677,7 +1679,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasIndexingThreshold() => $_has(5);
   @$pb.TagNumber(6)
-  void clearIndexingThreshold() => clearField(6);
+  void clearIndexingThreshold() => $_clearField(6);
 
   ///
   /// Interval between forced flushes.
@@ -1688,7 +1690,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasFlushIntervalSec() => $_has(6);
   @$pb.TagNumber(7)
-  void clearFlushIntervalSec() => clearField(7);
+  void clearFlushIntervalSec() => $_clearField(7);
 
   /// Deprecated in favor of `max_optimization_threads`
   @$pb.TagNumber(8)
@@ -1698,7 +1700,7 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasDeprecatedMaxOptimizationThreads() => $_has(7);
   @$pb.TagNumber(8)
-  void clearDeprecatedMaxOptimizationThreads() => clearField(8);
+  void clearDeprecatedMaxOptimizationThreads() => $_clearField(8);
 
   ///
   /// Max number of threads (jobs) for running optimizations per shard.
@@ -1708,11 +1710,11 @@ class OptimizersConfigDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   MaxOptimizationThreads get maxOptimizationThreads => $_getN(8);
   @$pb.TagNumber(9)
-  set maxOptimizationThreads(MaxOptimizationThreads v) { setField(9, v); }
+  set maxOptimizationThreads(MaxOptimizationThreads v) { $_setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasMaxOptimizationThreads() => $_has(8);
   @$pb.TagNumber(9)
-  void clearMaxOptimizationThreads() => clearField(9);
+  void clearMaxOptimizationThreads() => $_clearField(9);
   @$pb.TagNumber(9)
   MaxOptimizationThreads ensureMaxOptimizationThreads() => $_ensure(8);
 }
@@ -1770,11 +1772,11 @@ class ScalarQuantization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   QuantizationType get type => $_getN(0);
   @$pb.TagNumber(1)
-  set type(QuantizationType v) { setField(1, v); }
+  set type(QuantizationType v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.double get quantile => $_getN(1);
@@ -1783,7 +1785,7 @@ class ScalarQuantization extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasQuantile() => $_has(1);
   @$pb.TagNumber(2)
-  void clearQuantile() => clearField(2);
+  void clearQuantile() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.bool get alwaysRam => $_getBF(2);
@@ -1792,7 +1794,7 @@ class ScalarQuantization extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasAlwaysRam() => $_has(2);
   @$pb.TagNumber(3)
-  void clearAlwaysRam() => clearField(3);
+  void clearAlwaysRam() => $_clearField(3);
 }
 
 class ProductQuantization extends $pb.GeneratedMessage {
@@ -1843,11 +1845,11 @@ class ProductQuantization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CompressionRatio get compression => $_getN(0);
   @$pb.TagNumber(1)
-  set compression(CompressionRatio v) { setField(1, v); }
+  set compression(CompressionRatio v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCompression() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCompression() => clearField(1);
+  void clearCompression() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.bool get alwaysRam => $_getBF(1);
@@ -1856,7 +1858,7 @@ class ProductQuantization extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasAlwaysRam() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAlwaysRam() => clearField(2);
+  void clearAlwaysRam() => $_clearField(2);
 }
 
 class BinaryQuantization extends $pb.GeneratedMessage {
@@ -1906,7 +1908,7 @@ class BinaryQuantization extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAlwaysRam() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAlwaysRam() => clearField(1);
+  void clearAlwaysRam() => $_clearField(1);
 }
 
 enum QuantizationConfig_Quantization {
@@ -1974,38 +1976,38 @@ class QuantizationConfig extends $pb.GeneratedMessage {
   static QuantizationConfig? _defaultInstance;
 
   QuantizationConfig_Quantization whichQuantization() => _QuantizationConfig_QuantizationByTag[$_whichOneof(0)]!;
-  void clearQuantization() => clearField($_whichOneof(0));
+  void clearQuantization() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   ScalarQuantization get scalar => $_getN(0);
   @$pb.TagNumber(1)
-  set scalar(ScalarQuantization v) { setField(1, v); }
+  set scalar(ScalarQuantization v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasScalar() => $_has(0);
   @$pb.TagNumber(1)
-  void clearScalar() => clearField(1);
+  void clearScalar() => $_clearField(1);
   @$pb.TagNumber(1)
   ScalarQuantization ensureScalar() => $_ensure(0);
 
   @$pb.TagNumber(2)
   ProductQuantization get product => $_getN(1);
   @$pb.TagNumber(2)
-  set product(ProductQuantization v) { setField(2, v); }
+  set product(ProductQuantization v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProduct() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProduct() => clearField(2);
+  void clearProduct() => $_clearField(2);
   @$pb.TagNumber(2)
   ProductQuantization ensureProduct() => $_ensure(1);
 
   @$pb.TagNumber(3)
   BinaryQuantization get binary => $_getN(2);
   @$pb.TagNumber(3)
-  set binary(BinaryQuantization v) { setField(3, v); }
+  set binary(BinaryQuantization v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBinary() => $_has(2);
   @$pb.TagNumber(3)
-  void clearBinary() => clearField(3);
+  void clearBinary() => $_clearField(3);
   @$pb.TagNumber(3)
   BinaryQuantization ensureBinary() => $_ensure(2);
 }
@@ -2114,49 +2116,49 @@ class QuantizationConfigDiff extends $pb.GeneratedMessage {
   static QuantizationConfigDiff? _defaultInstance;
 
   QuantizationConfigDiff_Quantization whichQuantization() => _QuantizationConfigDiff_QuantizationByTag[$_whichOneof(0)]!;
-  void clearQuantization() => clearField($_whichOneof(0));
+  void clearQuantization() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   ScalarQuantization get scalar => $_getN(0);
   @$pb.TagNumber(1)
-  set scalar(ScalarQuantization v) { setField(1, v); }
+  set scalar(ScalarQuantization v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasScalar() => $_has(0);
   @$pb.TagNumber(1)
-  void clearScalar() => clearField(1);
+  void clearScalar() => $_clearField(1);
   @$pb.TagNumber(1)
   ScalarQuantization ensureScalar() => $_ensure(0);
 
   @$pb.TagNumber(2)
   ProductQuantization get product => $_getN(1);
   @$pb.TagNumber(2)
-  set product(ProductQuantization v) { setField(2, v); }
+  set product(ProductQuantization v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProduct() => $_has(1);
   @$pb.TagNumber(2)
-  void clearProduct() => clearField(2);
+  void clearProduct() => $_clearField(2);
   @$pb.TagNumber(2)
   ProductQuantization ensureProduct() => $_ensure(1);
 
   @$pb.TagNumber(3)
   Disabled get disabled => $_getN(2);
   @$pb.TagNumber(3)
-  set disabled(Disabled v) { setField(3, v); }
+  set disabled(Disabled v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDisabled() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDisabled() => clearField(3);
+  void clearDisabled() => $_clearField(3);
   @$pb.TagNumber(3)
   Disabled ensureDisabled() => $_ensure(2);
 
   @$pb.TagNumber(4)
   BinaryQuantization get binary => $_getN(3);
   @$pb.TagNumber(4)
-  set binary(BinaryQuantization v) { setField(4, v); }
+  set binary(BinaryQuantization v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBinary() => $_has(3);
   @$pb.TagNumber(4)
-  void clearBinary() => clearField(4);
+  void clearBinary() => $_clearField(4);
   @$pb.TagNumber(4)
   BinaryQuantization ensureBinary() => $_ensure(3);
 }
@@ -2293,7 +2295,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnabled() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnabled() => clearField(1);
+  void clearEnabled() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get maxQueryLimit => $_getIZ(1);
@@ -2302,7 +2304,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMaxQueryLimit() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMaxQueryLimit() => clearField(2);
+  void clearMaxQueryLimit() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.int get maxTimeout => $_getIZ(2);
@@ -2311,7 +2313,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMaxTimeout() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMaxTimeout() => clearField(3);
+  void clearMaxTimeout() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.bool get unindexedFilteringRetrieve => $_getBF(3);
@@ -2320,7 +2322,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasUnindexedFilteringRetrieve() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUnindexedFilteringRetrieve() => clearField(4);
+  void clearUnindexedFilteringRetrieve() => $_clearField(4);
 
   @$pb.TagNumber(5)
   $core.bool get unindexedFilteringUpdate => $_getBF(4);
@@ -2329,7 +2331,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasUnindexedFilteringUpdate() => $_has(4);
   @$pb.TagNumber(5)
-  void clearUnindexedFilteringUpdate() => clearField(5);
+  void clearUnindexedFilteringUpdate() => $_clearField(5);
 
   @$pb.TagNumber(6)
   $core.int get searchMaxHnswEf => $_getIZ(5);
@@ -2338,7 +2340,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasSearchMaxHnswEf() => $_has(5);
   @$pb.TagNumber(6)
-  void clearSearchMaxHnswEf() => clearField(6);
+  void clearSearchMaxHnswEf() => $_clearField(6);
 
   @$pb.TagNumber(7)
   $core.bool get searchAllowExact => $_getBF(6);
@@ -2347,7 +2349,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasSearchAllowExact() => $_has(6);
   @$pb.TagNumber(7)
-  void clearSearchAllowExact() => clearField(7);
+  void clearSearchAllowExact() => $_clearField(7);
 
   @$pb.TagNumber(8)
   $core.double get searchMaxOversampling => $_getN(7);
@@ -2356,7 +2358,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasSearchMaxOversampling() => $_has(7);
   @$pb.TagNumber(8)
-  void clearSearchMaxOversampling() => clearField(8);
+  void clearSearchMaxOversampling() => $_clearField(8);
 
   @$pb.TagNumber(9)
   $fixnum.Int64 get upsertMaxBatchsize => $_getI64(8);
@@ -2365,7 +2367,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasUpsertMaxBatchsize() => $_has(8);
   @$pb.TagNumber(9)
-  void clearUpsertMaxBatchsize() => clearField(9);
+  void clearUpsertMaxBatchsize() => $_clearField(9);
 
   @$pb.TagNumber(10)
   $fixnum.Int64 get maxCollectionVectorSizeBytes => $_getI64(9);
@@ -2374,7 +2376,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasMaxCollectionVectorSizeBytes() => $_has(9);
   @$pb.TagNumber(10)
-  void clearMaxCollectionVectorSizeBytes() => clearField(10);
+  void clearMaxCollectionVectorSizeBytes() => $_clearField(10);
 
   @$pb.TagNumber(11)
   $core.int get readRateLimit => $_getIZ(10);
@@ -2383,7 +2385,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasReadRateLimit() => $_has(10);
   @$pb.TagNumber(11)
-  void clearReadRateLimit() => clearField(11);
+  void clearReadRateLimit() => $_clearField(11);
 
   @$pb.TagNumber(12)
   $core.int get writeRateLimit => $_getIZ(11);
@@ -2392,7 +2394,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasWriteRateLimit() => $_has(11);
   @$pb.TagNumber(12)
-  void clearWriteRateLimit() => clearField(12);
+  void clearWriteRateLimit() => $_clearField(12);
 
   @$pb.TagNumber(13)
   $fixnum.Int64 get maxCollectionPayloadSizeBytes => $_getI64(12);
@@ -2401,7 +2403,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasMaxCollectionPayloadSizeBytes() => $_has(12);
   @$pb.TagNumber(13)
-  void clearMaxCollectionPayloadSizeBytes() => clearField(13);
+  void clearMaxCollectionPayloadSizeBytes() => $_clearField(13);
 
   @$pb.TagNumber(14)
   $fixnum.Int64 get filterMaxConditions => $_getI64(13);
@@ -2410,7 +2412,7 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasFilterMaxConditions() => $_has(13);
   @$pb.TagNumber(14)
-  void clearFilterMaxConditions() => clearField(14);
+  void clearFilterMaxConditions() => $_clearField(14);
 
   @$pb.TagNumber(15)
   $fixnum.Int64 get conditionMaxSize => $_getI64(14);
@@ -2419,27 +2421,27 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasConditionMaxSize() => $_has(14);
   @$pb.TagNumber(15)
-  void clearConditionMaxSize() => clearField(15);
+  void clearConditionMaxSize() => $_clearField(15);
 
   @$pb.TagNumber(16)
   StrictModeMultivectorConfig get multivectorConfig => $_getN(15);
   @$pb.TagNumber(16)
-  set multivectorConfig(StrictModeMultivectorConfig v) { setField(16, v); }
+  set multivectorConfig(StrictModeMultivectorConfig v) { $_setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasMultivectorConfig() => $_has(15);
   @$pb.TagNumber(16)
-  void clearMultivectorConfig() => clearField(16);
+  void clearMultivectorConfig() => $_clearField(16);
   @$pb.TagNumber(16)
   StrictModeMultivectorConfig ensureMultivectorConfig() => $_ensure(15);
 
   @$pb.TagNumber(17)
   StrictModeSparseConfig get sparseConfig => $_getN(16);
   @$pb.TagNumber(17)
-  set sparseConfig(StrictModeSparseConfig v) { setField(17, v); }
+  set sparseConfig(StrictModeSparseConfig v) { $_setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasSparseConfig() => $_has(16);
   @$pb.TagNumber(17)
-  void clearSparseConfig() => clearField(17);
+  void clearSparseConfig() => $_clearField(17);
   @$pb.TagNumber(17)
   StrictModeSparseConfig ensureSparseConfig() => $_ensure(16);
 
@@ -2450,16 +2452,16 @@ class StrictModeConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   $core.bool hasMaxPointsCount() => $_has(17);
   @$pb.TagNumber(18)
-  void clearMaxPointsCount() => clearField(18);
+  void clearMaxPointsCount() => $_clearField(18);
 }
 
 class StrictModeSparseConfig extends $pb.GeneratedMessage {
   factory StrictModeSparseConfig({
-    $core.Map<$core.String, StrictModeSparse>? sparseConfig,
+    $core.Iterable<$core.MapEntry<$core.String, StrictModeSparse>>? sparseConfig,
   }) {
     final $result = create();
     if (sparseConfig != null) {
-      $result.sparseConfig.addAll(sparseConfig);
+      $result.sparseConfig.addEntries(sparseConfig);
     }
     return $result;
   }
@@ -2494,7 +2496,7 @@ class StrictModeSparseConfig extends $pb.GeneratedMessage {
   static StrictModeSparseConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.Map<$core.String, StrictModeSparse> get sparseConfig => $_getMap(0);
+  $pb.PbMap<$core.String, StrictModeSparse> get sparseConfig => $_getMap(0);
 }
 
 class StrictModeSparse extends $pb.GeneratedMessage {
@@ -2544,16 +2546,16 @@ class StrictModeSparse extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasMaxLength() => $_has(0);
   @$pb.TagNumber(10)
-  void clearMaxLength() => clearField(10);
+  void clearMaxLength() => $_clearField(10);
 }
 
 class StrictModeMultivectorConfig extends $pb.GeneratedMessage {
   factory StrictModeMultivectorConfig({
-    $core.Map<$core.String, StrictModeMultivector>? multivectorConfig,
+    $core.Iterable<$core.MapEntry<$core.String, StrictModeMultivector>>? multivectorConfig,
   }) {
     final $result = create();
     if (multivectorConfig != null) {
-      $result.multivectorConfig.addAll(multivectorConfig);
+      $result.multivectorConfig.addEntries(multivectorConfig);
     }
     return $result;
   }
@@ -2588,7 +2590,7 @@ class StrictModeMultivectorConfig extends $pb.GeneratedMessage {
   static StrictModeMultivectorConfig? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.Map<$core.String, StrictModeMultivector> get multivectorConfig => $_getMap(0);
+  $pb.PbMap<$core.String, StrictModeMultivector> get multivectorConfig => $_getMap(0);
 }
 
 class StrictModeMultivector extends $pb.GeneratedMessage {
@@ -2638,7 +2640,7 @@ class StrictModeMultivector extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasMaxVectors() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMaxVectors() => clearField(1);
+  void clearMaxVectors() => $_clearField(1);
 }
 
 class CreateCollection extends $pb.GeneratedMessage {
@@ -2758,38 +2760,38 @@ class CreateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(4)
   HnswConfigDiff get hnswConfig => $_getN(1);
   @$pb.TagNumber(4)
-  set hnswConfig(HnswConfigDiff v) { setField(4, v); }
+  set hnswConfig(HnswConfigDiff v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasHnswConfig() => $_has(1);
   @$pb.TagNumber(4)
-  void clearHnswConfig() => clearField(4);
+  void clearHnswConfig() => $_clearField(4);
   @$pb.TagNumber(4)
   HnswConfigDiff ensureHnswConfig() => $_ensure(1);
 
   @$pb.TagNumber(5)
   WalConfigDiff get walConfig => $_getN(2);
   @$pb.TagNumber(5)
-  set walConfig(WalConfigDiff v) { setField(5, v); }
+  set walConfig(WalConfigDiff v) { $_setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasWalConfig() => $_has(2);
   @$pb.TagNumber(5)
-  void clearWalConfig() => clearField(5);
+  void clearWalConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   WalConfigDiff ensureWalConfig() => $_ensure(2);
 
   @$pb.TagNumber(6)
   OptimizersConfigDiff get optimizersConfig => $_getN(3);
   @$pb.TagNumber(6)
-  set optimizersConfig(OptimizersConfigDiff v) { setField(6, v); }
+  set optimizersConfig(OptimizersConfigDiff v) { $_setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasOptimizersConfig() => $_has(3);
   @$pb.TagNumber(6)
-  void clearOptimizersConfig() => clearField(6);
+  void clearOptimizersConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   OptimizersConfigDiff ensureOptimizersConfig() => $_ensure(3);
 
@@ -2800,7 +2802,7 @@ class CreateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasShardNumber() => $_has(4);
   @$pb.TagNumber(7)
-  void clearShardNumber() => clearField(7);
+  void clearShardNumber() => $_clearField(7);
 
   @$pb.TagNumber(8)
   $core.bool get onDiskPayload => $_getBF(5);
@@ -2809,7 +2811,7 @@ class CreateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasOnDiskPayload() => $_has(5);
   @$pb.TagNumber(8)
-  void clearOnDiskPayload() => clearField(8);
+  void clearOnDiskPayload() => $_clearField(8);
 
   @$pb.TagNumber(9)
   $fixnum.Int64 get timeout => $_getI64(6);
@@ -2818,16 +2820,16 @@ class CreateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasTimeout() => $_has(6);
   @$pb.TagNumber(9)
-  void clearTimeout() => clearField(9);
+  void clearTimeout() => $_clearField(9);
 
   @$pb.TagNumber(10)
   VectorsConfig get vectorsConfig => $_getN(7);
   @$pb.TagNumber(10)
-  set vectorsConfig(VectorsConfig v) { setField(10, v); }
+  set vectorsConfig(VectorsConfig v) { $_setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasVectorsConfig() => $_has(7);
   @$pb.TagNumber(10)
-  void clearVectorsConfig() => clearField(10);
+  void clearVectorsConfig() => $_clearField(10);
   @$pb.TagNumber(10)
   VectorsConfig ensureVectorsConfig() => $_ensure(7);
 
@@ -2838,7 +2840,7 @@ class CreateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasReplicationFactor() => $_has(8);
   @$pb.TagNumber(11)
-  void clearReplicationFactor() => clearField(11);
+  void clearReplicationFactor() => $_clearField(11);
 
   @$pb.TagNumber(12)
   $core.int get writeConsistencyFactor => $_getIZ(9);
@@ -2847,7 +2849,7 @@ class CreateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasWriteConsistencyFactor() => $_has(9);
   @$pb.TagNumber(12)
-  void clearWriteConsistencyFactor() => clearField(12);
+  void clearWriteConsistencyFactor() => $_clearField(12);
 
   @$pb.TagNumber(13)
   $core.String get initFromCollection => $_getSZ(10);
@@ -2856,47 +2858,47 @@ class CreateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasInitFromCollection() => $_has(10);
   @$pb.TagNumber(13)
-  void clearInitFromCollection() => clearField(13);
+  void clearInitFromCollection() => $_clearField(13);
 
   @$pb.TagNumber(14)
   QuantizationConfig get quantizationConfig => $_getN(11);
   @$pb.TagNumber(14)
-  set quantizationConfig(QuantizationConfig v) { setField(14, v); }
+  set quantizationConfig(QuantizationConfig v) { $_setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasQuantizationConfig() => $_has(11);
   @$pb.TagNumber(14)
-  void clearQuantizationConfig() => clearField(14);
+  void clearQuantizationConfig() => $_clearField(14);
   @$pb.TagNumber(14)
   QuantizationConfig ensureQuantizationConfig() => $_ensure(11);
 
   @$pb.TagNumber(15)
   ShardingMethod get shardingMethod => $_getN(12);
   @$pb.TagNumber(15)
-  set shardingMethod(ShardingMethod v) { setField(15, v); }
+  set shardingMethod(ShardingMethod v) { $_setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasShardingMethod() => $_has(12);
   @$pb.TagNumber(15)
-  void clearShardingMethod() => clearField(15);
+  void clearShardingMethod() => $_clearField(15);
 
   @$pb.TagNumber(16)
   SparseVectorConfig get sparseVectorsConfig => $_getN(13);
   @$pb.TagNumber(16)
-  set sparseVectorsConfig(SparseVectorConfig v) { setField(16, v); }
+  set sparseVectorsConfig(SparseVectorConfig v) { $_setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasSparseVectorsConfig() => $_has(13);
   @$pb.TagNumber(16)
-  void clearSparseVectorsConfig() => clearField(16);
+  void clearSparseVectorsConfig() => $_clearField(16);
   @$pb.TagNumber(16)
   SparseVectorConfig ensureSparseVectorsConfig() => $_ensure(13);
 
   @$pb.TagNumber(17)
   StrictModeConfig get strictModeConfig => $_getN(14);
   @$pb.TagNumber(17)
-  set strictModeConfig(StrictModeConfig v) { setField(17, v); }
+  set strictModeConfig(StrictModeConfig v) { $_setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasStrictModeConfig() => $_has(14);
   @$pb.TagNumber(17)
-  void clearStrictModeConfig() => clearField(17);
+  void clearStrictModeConfig() => $_clearField(17);
   @$pb.TagNumber(17)
   StrictModeConfig ensureStrictModeConfig() => $_ensure(14);
 }
@@ -2988,16 +2990,16 @@ class UpdateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   OptimizersConfigDiff get optimizersConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set optimizersConfig(OptimizersConfigDiff v) { setField(2, v); }
+  set optimizersConfig(OptimizersConfigDiff v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOptimizersConfig() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOptimizersConfig() => clearField(2);
+  void clearOptimizersConfig() => $_clearField(2);
   @$pb.TagNumber(2)
   OptimizersConfigDiff ensureOptimizersConfig() => $_ensure(1);
 
@@ -3008,71 +3010,71 @@ class UpdateCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTimeout() => clearField(3);
+  void clearTimeout() => $_clearField(3);
 
   @$pb.TagNumber(4)
   CollectionParamsDiff get params => $_getN(3);
   @$pb.TagNumber(4)
-  set params(CollectionParamsDiff v) { setField(4, v); }
+  set params(CollectionParamsDiff v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasParams() => $_has(3);
   @$pb.TagNumber(4)
-  void clearParams() => clearField(4);
+  void clearParams() => $_clearField(4);
   @$pb.TagNumber(4)
   CollectionParamsDiff ensureParams() => $_ensure(3);
 
   @$pb.TagNumber(5)
   HnswConfigDiff get hnswConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set hnswConfig(HnswConfigDiff v) { setField(5, v); }
+  set hnswConfig(HnswConfigDiff v) { $_setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasHnswConfig() => $_has(4);
   @$pb.TagNumber(5)
-  void clearHnswConfig() => clearField(5);
+  void clearHnswConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   HnswConfigDiff ensureHnswConfig() => $_ensure(4);
 
   @$pb.TagNumber(6)
   VectorsConfigDiff get vectorsConfig => $_getN(5);
   @$pb.TagNumber(6)
-  set vectorsConfig(VectorsConfigDiff v) { setField(6, v); }
+  set vectorsConfig(VectorsConfigDiff v) { $_setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasVectorsConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearVectorsConfig() => clearField(6);
+  void clearVectorsConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   VectorsConfigDiff ensureVectorsConfig() => $_ensure(5);
 
   @$pb.TagNumber(7)
   QuantizationConfigDiff get quantizationConfig => $_getN(6);
   @$pb.TagNumber(7)
-  set quantizationConfig(QuantizationConfigDiff v) { setField(7, v); }
+  set quantizationConfig(QuantizationConfigDiff v) { $_setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasQuantizationConfig() => $_has(6);
   @$pb.TagNumber(7)
-  void clearQuantizationConfig() => clearField(7);
+  void clearQuantizationConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   QuantizationConfigDiff ensureQuantizationConfig() => $_ensure(6);
 
   @$pb.TagNumber(8)
   SparseVectorConfig get sparseVectorsConfig => $_getN(7);
   @$pb.TagNumber(8)
-  set sparseVectorsConfig(SparseVectorConfig v) { setField(8, v); }
+  set sparseVectorsConfig(SparseVectorConfig v) { $_setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSparseVectorsConfig() => $_has(7);
   @$pb.TagNumber(8)
-  void clearSparseVectorsConfig() => clearField(8);
+  void clearSparseVectorsConfig() => $_clearField(8);
   @$pb.TagNumber(8)
   SparseVectorConfig ensureSparseVectorsConfig() => $_ensure(7);
 
   @$pb.TagNumber(9)
   StrictModeConfig get strictModeConfig => $_getN(8);
   @$pb.TagNumber(9)
-  set strictModeConfig(StrictModeConfig v) { setField(9, v); }
+  set strictModeConfig(StrictModeConfig v) { $_setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasStrictModeConfig() => $_has(8);
   @$pb.TagNumber(9)
-  void clearStrictModeConfig() => clearField(9);
+  void clearStrictModeConfig() => $_clearField(9);
   @$pb.TagNumber(9)
   StrictModeConfig ensureStrictModeConfig() => $_ensure(8);
 }
@@ -3129,7 +3131,7 @@ class DeleteCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get timeout => $_getI64(1);
@@ -3138,7 +3140,7 @@ class DeleteCollection extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTimeout() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTimeout() => clearField(2);
+  void clearTimeout() => $_clearField(2);
 }
 
 class CollectionOperationResponse extends $pb.GeneratedMessage {
@@ -3193,7 +3195,7 @@ class CollectionOperationResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResult() => clearField(1);
+  void clearResult() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.double get time => $_getN(1);
@@ -3202,7 +3204,7 @@ class CollectionOperationResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTime() => clearField(2);
+  void clearTime() => $_clearField(2);
 }
 
 class CollectionParams extends $pb.GeneratedMessage {
@@ -3287,7 +3289,7 @@ class CollectionParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasShardNumber() => $_has(0);
   @$pb.TagNumber(3)
-  void clearShardNumber() => clearField(3);
+  void clearShardNumber() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.bool get onDiskPayload => $_getBF(1);
@@ -3296,16 +3298,16 @@ class CollectionParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasOnDiskPayload() => $_has(1);
   @$pb.TagNumber(4)
-  void clearOnDiskPayload() => clearField(4);
+  void clearOnDiskPayload() => $_clearField(4);
 
   @$pb.TagNumber(5)
   VectorsConfig get vectorsConfig => $_getN(2);
   @$pb.TagNumber(5)
-  set vectorsConfig(VectorsConfig v) { setField(5, v); }
+  set vectorsConfig(VectorsConfig v) { $_setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasVectorsConfig() => $_has(2);
   @$pb.TagNumber(5)
-  void clearVectorsConfig() => clearField(5);
+  void clearVectorsConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   VectorsConfig ensureVectorsConfig() => $_ensure(2);
 
@@ -3316,7 +3318,7 @@ class CollectionParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasReplicationFactor() => $_has(3);
   @$pb.TagNumber(6)
-  void clearReplicationFactor() => clearField(6);
+  void clearReplicationFactor() => $_clearField(6);
 
   @$pb.TagNumber(7)
   $core.int get writeConsistencyFactor => $_getIZ(4);
@@ -3325,7 +3327,7 @@ class CollectionParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasWriteConsistencyFactor() => $_has(4);
   @$pb.TagNumber(7)
-  void clearWriteConsistencyFactor() => clearField(7);
+  void clearWriteConsistencyFactor() => $_clearField(7);
 
   @$pb.TagNumber(8)
   $core.int get readFanOutFactor => $_getIZ(5);
@@ -3334,25 +3336,25 @@ class CollectionParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasReadFanOutFactor() => $_has(5);
   @$pb.TagNumber(8)
-  void clearReadFanOutFactor() => clearField(8);
+  void clearReadFanOutFactor() => $_clearField(8);
 
   @$pb.TagNumber(9)
   ShardingMethod get shardingMethod => $_getN(6);
   @$pb.TagNumber(9)
-  set shardingMethod(ShardingMethod v) { setField(9, v); }
+  set shardingMethod(ShardingMethod v) { $_setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasShardingMethod() => $_has(6);
   @$pb.TagNumber(9)
-  void clearShardingMethod() => clearField(9);
+  void clearShardingMethod() => $_clearField(9);
 
   @$pb.TagNumber(10)
   SparseVectorConfig get sparseVectorsConfig => $_getN(7);
   @$pb.TagNumber(10)
-  set sparseVectorsConfig(SparseVectorConfig v) { setField(10, v); }
+  set sparseVectorsConfig(SparseVectorConfig v) { $_setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSparseVectorsConfig() => $_has(7);
   @$pb.TagNumber(10)
-  void clearSparseVectorsConfig() => clearField(10);
+  void clearSparseVectorsConfig() => $_clearField(10);
   @$pb.TagNumber(10)
   SparseVectorConfig ensureSparseVectorsConfig() => $_ensure(7);
 }
@@ -3419,7 +3421,7 @@ class CollectionParamsDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasReplicationFactor() => $_has(0);
   @$pb.TagNumber(1)
-  void clearReplicationFactor() => clearField(1);
+  void clearReplicationFactor() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get writeConsistencyFactor => $_getIZ(1);
@@ -3428,7 +3430,7 @@ class CollectionParamsDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasWriteConsistencyFactor() => $_has(1);
   @$pb.TagNumber(2)
-  void clearWriteConsistencyFactor() => clearField(2);
+  void clearWriteConsistencyFactor() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.bool get onDiskPayload => $_getBF(2);
@@ -3437,7 +3439,7 @@ class CollectionParamsDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasOnDiskPayload() => $_has(2);
   @$pb.TagNumber(3)
-  void clearOnDiskPayload() => clearField(3);
+  void clearOnDiskPayload() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.int get readFanOutFactor => $_getIZ(3);
@@ -3446,7 +3448,7 @@ class CollectionParamsDiff extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasReadFanOutFactor() => $_has(3);
   @$pb.TagNumber(4)
-  void clearReadFanOutFactor() => clearField(4);
+  void clearReadFanOutFactor() => $_clearField(4);
 }
 
 class CollectionConfig extends $pb.GeneratedMessage {
@@ -3517,66 +3519,66 @@ class CollectionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CollectionParams get params => $_getN(0);
   @$pb.TagNumber(1)
-  set params(CollectionParams v) { setField(1, v); }
+  set params(CollectionParams v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasParams() => $_has(0);
   @$pb.TagNumber(1)
-  void clearParams() => clearField(1);
+  void clearParams() => $_clearField(1);
   @$pb.TagNumber(1)
   CollectionParams ensureParams() => $_ensure(0);
 
   @$pb.TagNumber(2)
   HnswConfigDiff get hnswConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set hnswConfig(HnswConfigDiff v) { setField(2, v); }
+  set hnswConfig(HnswConfigDiff v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasHnswConfig() => $_has(1);
   @$pb.TagNumber(2)
-  void clearHnswConfig() => clearField(2);
+  void clearHnswConfig() => $_clearField(2);
   @$pb.TagNumber(2)
   HnswConfigDiff ensureHnswConfig() => $_ensure(1);
 
   @$pb.TagNumber(3)
   OptimizersConfigDiff get optimizerConfig => $_getN(2);
   @$pb.TagNumber(3)
-  set optimizerConfig(OptimizersConfigDiff v) { setField(3, v); }
+  set optimizerConfig(OptimizersConfigDiff v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasOptimizerConfig() => $_has(2);
   @$pb.TagNumber(3)
-  void clearOptimizerConfig() => clearField(3);
+  void clearOptimizerConfig() => $_clearField(3);
   @$pb.TagNumber(3)
   OptimizersConfigDiff ensureOptimizerConfig() => $_ensure(2);
 
   @$pb.TagNumber(4)
   WalConfigDiff get walConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set walConfig(WalConfigDiff v) { setField(4, v); }
+  set walConfig(WalConfigDiff v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasWalConfig() => $_has(3);
   @$pb.TagNumber(4)
-  void clearWalConfig() => clearField(4);
+  void clearWalConfig() => $_clearField(4);
   @$pb.TagNumber(4)
   WalConfigDiff ensureWalConfig() => $_ensure(3);
 
   @$pb.TagNumber(5)
   QuantizationConfig get quantizationConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set quantizationConfig(QuantizationConfig v) { setField(5, v); }
+  set quantizationConfig(QuantizationConfig v) { $_setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasQuantizationConfig() => $_has(4);
   @$pb.TagNumber(5)
-  void clearQuantizationConfig() => clearField(5);
+  void clearQuantizationConfig() => $_clearField(5);
   @$pb.TagNumber(5)
   QuantizationConfig ensureQuantizationConfig() => $_ensure(4);
 
   @$pb.TagNumber(6)
   StrictModeConfig get strictModeConfig => $_getN(5);
   @$pb.TagNumber(6)
-  set strictModeConfig(StrictModeConfig v) { setField(6, v); }
+  set strictModeConfig(StrictModeConfig v) { $_setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStrictModeConfig() => $_has(5);
   @$pb.TagNumber(6)
-  void clearStrictModeConfig() => clearField(6);
+  void clearStrictModeConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   StrictModeConfig ensureStrictModeConfig() => $_ensure(5);
 }
@@ -3633,7 +3635,7 @@ class KeywordIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasIsTenant() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIsTenant() => clearField(1);
+  void clearIsTenant() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.bool get onDisk => $_getBF(1);
@@ -3642,7 +3644,7 @@ class KeywordIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasOnDisk() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOnDisk() => clearField(2);
+  void clearOnDisk() => $_clearField(2);
 }
 
 class IntegerIndexParams extends $pb.GeneratedMessage {
@@ -3707,7 +3709,7 @@ class IntegerIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasLookup() => $_has(0);
   @$pb.TagNumber(1)
-  void clearLookup() => clearField(1);
+  void clearLookup() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.bool get range => $_getBF(1);
@@ -3716,7 +3718,7 @@ class IntegerIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasRange() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRange() => clearField(2);
+  void clearRange() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.bool get isPrincipal => $_getBF(2);
@@ -3725,7 +3727,7 @@ class IntegerIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIsPrincipal() => $_has(2);
   @$pb.TagNumber(3)
-  void clearIsPrincipal() => clearField(3);
+  void clearIsPrincipal() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.bool get onDisk => $_getBF(3);
@@ -3734,7 +3736,7 @@ class IntegerIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasOnDisk() => $_has(3);
   @$pb.TagNumber(4)
-  void clearOnDisk() => clearField(4);
+  void clearOnDisk() => $_clearField(4);
 }
 
 class FloatIndexParams extends $pb.GeneratedMessage {
@@ -3789,7 +3791,7 @@ class FloatIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasOnDisk() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOnDisk() => clearField(1);
+  void clearOnDisk() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.bool get isPrincipal => $_getBF(1);
@@ -3798,7 +3800,7 @@ class FloatIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIsPrincipal() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIsPrincipal() => clearField(2);
+  void clearIsPrincipal() => $_clearField(2);
 }
 
 class GeoIndexParams extends $pb.GeneratedMessage {
@@ -3848,7 +3850,7 @@ class GeoIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasOnDisk() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOnDisk() => clearField(1);
+  void clearOnDisk() => $_clearField(1);
 }
 
 class TextIndexParams extends $pb.GeneratedMessage {
@@ -3914,11 +3916,11 @@ class TextIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   TokenizerType get tokenizer => $_getN(0);
   @$pb.TagNumber(1)
-  set tokenizer(TokenizerType v) { setField(1, v); }
+  set tokenizer(TokenizerType v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTokenizer() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTokenizer() => clearField(1);
+  void clearTokenizer() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.bool get lowercase => $_getBF(1);
@@ -3927,7 +3929,7 @@ class TextIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasLowercase() => $_has(1);
   @$pb.TagNumber(2)
-  void clearLowercase() => clearField(2);
+  void clearLowercase() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get minTokenLen => $_getI64(2);
@@ -3936,7 +3938,7 @@ class TextIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMinTokenLen() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMinTokenLen() => clearField(3);
+  void clearMinTokenLen() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $fixnum.Int64 get maxTokenLen => $_getI64(3);
@@ -3945,7 +3947,7 @@ class TextIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMaxTokenLen() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMaxTokenLen() => clearField(4);
+  void clearMaxTokenLen() => $_clearField(4);
 
   @$pb.TagNumber(5)
   $core.bool get onDisk => $_getBF(4);
@@ -3954,7 +3956,7 @@ class TextIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasOnDisk() => $_has(4);
   @$pb.TagNumber(5)
-  void clearOnDisk() => clearField(5);
+  void clearOnDisk() => $_clearField(5);
 }
 
 class BoolIndexParams extends $pb.GeneratedMessage {
@@ -4004,7 +4006,7 @@ class BoolIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasOnDisk() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOnDisk() => clearField(1);
+  void clearOnDisk() => $_clearField(1);
 }
 
 class DatetimeIndexParams extends $pb.GeneratedMessage {
@@ -4059,7 +4061,7 @@ class DatetimeIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasOnDisk() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOnDisk() => clearField(1);
+  void clearOnDisk() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.bool get isPrincipal => $_getBF(1);
@@ -4068,7 +4070,7 @@ class DatetimeIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIsPrincipal() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIsPrincipal() => clearField(2);
+  void clearIsPrincipal() => $_clearField(2);
 }
 
 class UuidIndexParams extends $pb.GeneratedMessage {
@@ -4123,7 +4125,7 @@ class UuidIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasIsTenant() => $_has(0);
   @$pb.TagNumber(1)
-  void clearIsTenant() => clearField(1);
+  void clearIsTenant() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.bool get onDisk => $_getBF(1);
@@ -4132,7 +4134,7 @@ class UuidIndexParams extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasOnDisk() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOnDisk() => clearField(2);
+  void clearOnDisk() => $_clearField(2);
 }
 
 enum PayloadIndexParams_IndexParams {
@@ -4235,93 +4237,93 @@ class PayloadIndexParams extends $pb.GeneratedMessage {
   static PayloadIndexParams? _defaultInstance;
 
   PayloadIndexParams_IndexParams whichIndexParams() => _PayloadIndexParams_IndexParamsByTag[$_whichOneof(0)]!;
-  void clearIndexParams() => clearField($_whichOneof(0));
+  void clearIndexParams() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   TextIndexParams get textIndexParams => $_getN(0);
   @$pb.TagNumber(1)
-  set textIndexParams(TextIndexParams v) { setField(1, v); }
+  set textIndexParams(TextIndexParams v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTextIndexParams() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTextIndexParams() => clearField(1);
+  void clearTextIndexParams() => $_clearField(1);
   @$pb.TagNumber(1)
   TextIndexParams ensureTextIndexParams() => $_ensure(0);
 
   @$pb.TagNumber(2)
   IntegerIndexParams get integerIndexParams => $_getN(1);
   @$pb.TagNumber(2)
-  set integerIndexParams(IntegerIndexParams v) { setField(2, v); }
+  set integerIndexParams(IntegerIndexParams v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIntegerIndexParams() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIntegerIndexParams() => clearField(2);
+  void clearIntegerIndexParams() => $_clearField(2);
   @$pb.TagNumber(2)
   IntegerIndexParams ensureIntegerIndexParams() => $_ensure(1);
 
   @$pb.TagNumber(3)
   KeywordIndexParams get keywordIndexParams => $_getN(2);
   @$pb.TagNumber(3)
-  set keywordIndexParams(KeywordIndexParams v) { setField(3, v); }
+  set keywordIndexParams(KeywordIndexParams v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasKeywordIndexParams() => $_has(2);
   @$pb.TagNumber(3)
-  void clearKeywordIndexParams() => clearField(3);
+  void clearKeywordIndexParams() => $_clearField(3);
   @$pb.TagNumber(3)
   KeywordIndexParams ensureKeywordIndexParams() => $_ensure(2);
 
   @$pb.TagNumber(4)
   FloatIndexParams get floatIndexParams => $_getN(3);
   @$pb.TagNumber(4)
-  set floatIndexParams(FloatIndexParams v) { setField(4, v); }
+  set floatIndexParams(FloatIndexParams v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasFloatIndexParams() => $_has(3);
   @$pb.TagNumber(4)
-  void clearFloatIndexParams() => clearField(4);
+  void clearFloatIndexParams() => $_clearField(4);
   @$pb.TagNumber(4)
   FloatIndexParams ensureFloatIndexParams() => $_ensure(3);
 
   @$pb.TagNumber(5)
   GeoIndexParams get geoIndexParams => $_getN(4);
   @$pb.TagNumber(5)
-  set geoIndexParams(GeoIndexParams v) { setField(5, v); }
+  set geoIndexParams(GeoIndexParams v) { $_setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasGeoIndexParams() => $_has(4);
   @$pb.TagNumber(5)
-  void clearGeoIndexParams() => clearField(5);
+  void clearGeoIndexParams() => $_clearField(5);
   @$pb.TagNumber(5)
   GeoIndexParams ensureGeoIndexParams() => $_ensure(4);
 
   @$pb.TagNumber(6)
   BoolIndexParams get boolIndexParams => $_getN(5);
   @$pb.TagNumber(6)
-  set boolIndexParams(BoolIndexParams v) { setField(6, v); }
+  set boolIndexParams(BoolIndexParams v) { $_setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBoolIndexParams() => $_has(5);
   @$pb.TagNumber(6)
-  void clearBoolIndexParams() => clearField(6);
+  void clearBoolIndexParams() => $_clearField(6);
   @$pb.TagNumber(6)
   BoolIndexParams ensureBoolIndexParams() => $_ensure(5);
 
   @$pb.TagNumber(7)
   DatetimeIndexParams get datetimeIndexParams => $_getN(6);
   @$pb.TagNumber(7)
-  set datetimeIndexParams(DatetimeIndexParams v) { setField(7, v); }
+  set datetimeIndexParams(DatetimeIndexParams v) { $_setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDatetimeIndexParams() => $_has(6);
   @$pb.TagNumber(7)
-  void clearDatetimeIndexParams() => clearField(7);
+  void clearDatetimeIndexParams() => $_clearField(7);
   @$pb.TagNumber(7)
   DatetimeIndexParams ensureDatetimeIndexParams() => $_ensure(6);
 
   @$pb.TagNumber(8)
   UuidIndexParams get uuidIndexParams => $_getN(7);
   @$pb.TagNumber(8)
-  set uuidIndexParams(UuidIndexParams v) { setField(8, v); }
+  set uuidIndexParams(UuidIndexParams v) { $_setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUuidIndexParams() => $_has(7);
   @$pb.TagNumber(8)
-  void clearUuidIndexParams() => clearField(8);
+  void clearUuidIndexParams() => $_clearField(8);
   @$pb.TagNumber(8)
   UuidIndexParams ensureUuidIndexParams() => $_ensure(7);
 }
@@ -4379,20 +4381,20 @@ class PayloadSchemaInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PayloadSchemaType get dataType => $_getN(0);
   @$pb.TagNumber(1)
-  set dataType(PayloadSchemaType v) { setField(1, v); }
+  set dataType(PayloadSchemaType v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDataType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearDataType() => clearField(1);
+  void clearDataType() => $_clearField(1);
 
   @$pb.TagNumber(2)
   PayloadIndexParams get params => $_getN(1);
   @$pb.TagNumber(2)
-  set params(PayloadIndexParams v) { setField(2, v); }
+  set params(PayloadIndexParams v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasParams() => $_has(1);
   @$pb.TagNumber(2)
-  void clearParams() => clearField(2);
+  void clearParams() => $_clearField(2);
   @$pb.TagNumber(2)
   PayloadIndexParams ensureParams() => $_ensure(1);
 
@@ -4403,7 +4405,7 @@ class PayloadSchemaInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPoints() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPoints() => clearField(3);
+  void clearPoints() => $_clearField(3);
 }
 
 class CollectionInfo extends $pb.GeneratedMessage {
@@ -4413,7 +4415,7 @@ class CollectionInfo extends $pb.GeneratedMessage {
     $fixnum.Int64? vectorsCount,
     $fixnum.Int64? segmentsCount,
     CollectionConfig? config,
-    $core.Map<$core.String, PayloadSchemaInfo>? payloadSchema,
+    $core.Iterable<$core.MapEntry<$core.String, PayloadSchemaInfo>>? payloadSchema,
     $fixnum.Int64? pointsCount,
     $fixnum.Int64? indexedVectorsCount,
   }) {
@@ -4434,7 +4436,7 @@ class CollectionInfo extends $pb.GeneratedMessage {
       $result.config = config;
     }
     if (payloadSchema != null) {
-      $result.payloadSchema.addAll(payloadSchema);
+      $result.payloadSchema.addEntries(payloadSchema);
     }
     if (pointsCount != null) {
       $result.pointsCount = pointsCount;
@@ -4484,20 +4486,20 @@ class CollectionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   CollectionStatus get status => $_getN(0);
   @$pb.TagNumber(1)
-  set status(CollectionStatus v) { setField(1, v); }
+  set status(CollectionStatus v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStatus() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStatus() => clearField(1);
+  void clearStatus() => $_clearField(1);
 
   @$pb.TagNumber(2)
   OptimizerStatus get optimizerStatus => $_getN(1);
   @$pb.TagNumber(2)
-  set optimizerStatus(OptimizerStatus v) { setField(2, v); }
+  set optimizerStatus(OptimizerStatus v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOptimizerStatus() => $_has(1);
   @$pb.TagNumber(2)
-  void clearOptimizerStatus() => clearField(2);
+  void clearOptimizerStatus() => $_clearField(2);
   @$pb.TagNumber(2)
   OptimizerStatus ensureOptimizerStatus() => $_ensure(1);
 
@@ -4508,7 +4510,7 @@ class CollectionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasVectorsCount() => $_has(2);
   @$pb.TagNumber(3)
-  void clearVectorsCount() => clearField(3);
+  void clearVectorsCount() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $fixnum.Int64 get segmentsCount => $_getI64(3);
@@ -4517,21 +4519,21 @@ class CollectionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasSegmentsCount() => $_has(3);
   @$pb.TagNumber(4)
-  void clearSegmentsCount() => clearField(4);
+  void clearSegmentsCount() => $_clearField(4);
 
   @$pb.TagNumber(7)
   CollectionConfig get config => $_getN(4);
   @$pb.TagNumber(7)
-  set config(CollectionConfig v) { setField(7, v); }
+  set config(CollectionConfig v) { $_setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasConfig() => $_has(4);
   @$pb.TagNumber(7)
-  void clearConfig() => clearField(7);
+  void clearConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   CollectionConfig ensureConfig() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $core.Map<$core.String, PayloadSchemaInfo> get payloadSchema => $_getMap(5);
+  $pb.PbMap<$core.String, PayloadSchemaInfo> get payloadSchema => $_getMap(5);
 
   @$pb.TagNumber(9)
   $fixnum.Int64 get pointsCount => $_getI64(6);
@@ -4540,7 +4542,7 @@ class CollectionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasPointsCount() => $_has(6);
   @$pb.TagNumber(9)
-  void clearPointsCount() => clearField(9);
+  void clearPointsCount() => $_clearField(9);
 
   @$pb.TagNumber(10)
   $fixnum.Int64 get indexedVectorsCount => $_getI64(7);
@@ -4549,7 +4551,7 @@ class CollectionInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasIndexedVectorsCount() => $_has(7);
   @$pb.TagNumber(10)
-  void clearIndexedVectorsCount() => clearField(10);
+  void clearIndexedVectorsCount() => $_clearField(10);
 }
 
 class ChangeAliases extends $pb.GeneratedMessage {
@@ -4598,7 +4600,7 @@ class ChangeAliases extends $pb.GeneratedMessage {
   static ChangeAliases? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<AliasOperations> get actions => $_getList(0);
+  $pb.PbList<AliasOperations> get actions => $_getList(0);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get timeout => $_getI64(1);
@@ -4607,7 +4609,7 @@ class ChangeAliases extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTimeout() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTimeout() => clearField(2);
+  void clearTimeout() => $_clearField(2);
 }
 
 enum AliasOperations_Action {
@@ -4675,38 +4677,38 @@ class AliasOperations extends $pb.GeneratedMessage {
   static AliasOperations? _defaultInstance;
 
   AliasOperations_Action whichAction() => _AliasOperations_ActionByTag[$_whichOneof(0)]!;
-  void clearAction() => clearField($_whichOneof(0));
+  void clearAction() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   CreateAlias get createAlias => $_getN(0);
   @$pb.TagNumber(1)
-  set createAlias(CreateAlias v) { setField(1, v); }
+  set createAlias(CreateAlias v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateAlias() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateAlias() => clearField(1);
+  void clearCreateAlias() => $_clearField(1);
   @$pb.TagNumber(1)
   CreateAlias ensureCreateAlias() => $_ensure(0);
 
   @$pb.TagNumber(2)
   RenameAlias get renameAlias => $_getN(1);
   @$pb.TagNumber(2)
-  set renameAlias(RenameAlias v) { setField(2, v); }
+  set renameAlias(RenameAlias v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRenameAlias() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRenameAlias() => clearField(2);
+  void clearRenameAlias() => $_clearField(2);
   @$pb.TagNumber(2)
   RenameAlias ensureRenameAlias() => $_ensure(1);
 
   @$pb.TagNumber(3)
   DeleteAlias get deleteAlias => $_getN(2);
   @$pb.TagNumber(3)
-  set deleteAlias(DeleteAlias v) { setField(3, v); }
+  set deleteAlias(DeleteAlias v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDeleteAlias() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDeleteAlias() => clearField(3);
+  void clearDeleteAlias() => $_clearField(3);
   @$pb.TagNumber(3)
   DeleteAlias ensureDeleteAlias() => $_ensure(2);
 }
@@ -4763,7 +4765,7 @@ class CreateAlias extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get aliasName => $_getSZ(1);
@@ -4772,7 +4774,7 @@ class CreateAlias extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasAliasName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAliasName() => clearField(2);
+  void clearAliasName() => $_clearField(2);
 }
 
 class RenameAlias extends $pb.GeneratedMessage {
@@ -4827,7 +4829,7 @@ class RenameAlias extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasOldAliasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearOldAliasName() => clearField(1);
+  void clearOldAliasName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get newAliasName => $_getSZ(1);
@@ -4836,7 +4838,7 @@ class RenameAlias extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNewAliasName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNewAliasName() => clearField(2);
+  void clearNewAliasName() => $_clearField(2);
 }
 
 class DeleteAlias extends $pb.GeneratedMessage {
@@ -4886,7 +4888,7 @@ class DeleteAlias extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAliasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAliasName() => clearField(1);
+  void clearAliasName() => $_clearField(1);
 }
 
 class ListAliasesRequest extends $pb.GeneratedMessage {
@@ -4968,7 +4970,7 @@ class ListCollectionAliasesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 }
 
 class AliasDescription extends $pb.GeneratedMessage {
@@ -5023,7 +5025,7 @@ class AliasDescription extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAliasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAliasName() => clearField(1);
+  void clearAliasName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get collectionName => $_getSZ(1);
@@ -5032,7 +5034,7 @@ class AliasDescription extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCollectionName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCollectionName() => clearField(2);
+  void clearCollectionName() => $_clearField(2);
 }
 
 class ListAliasesResponse extends $pb.GeneratedMessage {
@@ -5081,7 +5083,7 @@ class ListAliasesResponse extends $pb.GeneratedMessage {
   static ListAliasesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<AliasDescription> get aliases => $_getList(0);
+  $pb.PbList<AliasDescription> get aliases => $_getList(0);
 
   @$pb.TagNumber(2)
   $core.double get time => $_getN(1);
@@ -5090,7 +5092,7 @@ class ListAliasesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTime() => clearField(2);
+  void clearTime() => $_clearField(2);
 }
 
 class CollectionClusterInfoRequest extends $pb.GeneratedMessage {
@@ -5140,7 +5142,7 @@ class CollectionClusterInfoRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 }
 
 enum ShardKey_Key {
@@ -5201,7 +5203,7 @@ class ShardKey extends $pb.GeneratedMessage {
   static ShardKey? _defaultInstance;
 
   ShardKey_Key whichKey() => _ShardKey_KeyByTag[$_whichOneof(0)]!;
-  void clearKey() => clearField($_whichOneof(0));
+  void clearKey() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   $core.String get keyword => $_getSZ(0);
@@ -5210,7 +5212,7 @@ class ShardKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKeyword() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKeyword() => clearField(1);
+  void clearKeyword() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get number => $_getI64(1);
@@ -5219,7 +5221,7 @@ class ShardKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNumber() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNumber() => clearField(2);
+  void clearNumber() => $_clearField(2);
 }
 
 class LocalShardInfo extends $pb.GeneratedMessage {
@@ -5284,7 +5286,7 @@ class LocalShardInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get pointsCount => $_getI64(1);
@@ -5293,25 +5295,25 @@ class LocalShardInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPointsCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPointsCount() => clearField(2);
+  void clearPointsCount() => $_clearField(2);
 
   @$pb.TagNumber(3)
   ReplicaState get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(ReplicaState v) { setField(3, v); }
+  set state(ReplicaState v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
   @$pb.TagNumber(4)
   ShardKey get shardKey => $_getN(3);
   @$pb.TagNumber(4)
-  set shardKey(ShardKey v) { setField(4, v); }
+  set shardKey(ShardKey v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasShardKey() => $_has(3);
   @$pb.TagNumber(4)
-  void clearShardKey() => clearField(4);
+  void clearShardKey() => $_clearField(4);
   @$pb.TagNumber(4)
   ShardKey ensureShardKey() => $_ensure(3);
 }
@@ -5378,7 +5380,7 @@ class RemoteShardInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get peerId => $_getI64(1);
@@ -5387,25 +5389,25 @@ class RemoteShardInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPeerId() => clearField(2);
+  void clearPeerId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   ReplicaState get state => $_getN(2);
   @$pb.TagNumber(3)
-  set state(ReplicaState v) { setField(3, v); }
+  set state(ReplicaState v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasState() => $_has(2);
   @$pb.TagNumber(3)
-  void clearState() => clearField(3);
+  void clearState() => $_clearField(3);
 
   @$pb.TagNumber(4)
   ShardKey get shardKey => $_getN(3);
   @$pb.TagNumber(4)
-  set shardKey(ShardKey v) { setField(4, v); }
+  set shardKey(ShardKey v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasShardKey() => $_has(3);
   @$pb.TagNumber(4)
-  void clearShardKey() => clearField(4);
+  void clearShardKey() => $_clearField(4);
   @$pb.TagNumber(4)
   ShardKey ensureShardKey() => $_ensure(3);
 }
@@ -5477,7 +5479,7 @@ class ShardTransferInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get from => $_getI64(1);
@@ -5486,7 +5488,7 @@ class ShardTransferInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFrom() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFrom() => clearField(2);
+  void clearFrom() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get to => $_getI64(2);
@@ -5495,7 +5497,7 @@ class ShardTransferInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTo() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTo() => clearField(3);
+  void clearTo() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.bool get sync => $_getBF(3);
@@ -5504,7 +5506,7 @@ class ShardTransferInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasSync() => $_has(3);
   @$pb.TagNumber(4)
-  void clearSync() => clearField(4);
+  void clearSync() => $_clearField(4);
 
   @$pb.TagNumber(5)
   $core.int get toShardId => $_getIZ(4);
@@ -5513,7 +5515,7 @@ class ShardTransferInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasToShardId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearToShardId() => clearField(5);
+  void clearToShardId() => $_clearField(5);
 }
 
 class ReshardingInfo extends $pb.GeneratedMessage {
@@ -5578,7 +5580,7 @@ class ReshardingInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get peerId => $_getI64(1);
@@ -5587,27 +5589,27 @@ class ReshardingInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPeerId() => clearField(2);
+  void clearPeerId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   ShardKey get shardKey => $_getN(2);
   @$pb.TagNumber(3)
-  set shardKey(ShardKey v) { setField(3, v); }
+  set shardKey(ShardKey v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasShardKey() => $_has(2);
   @$pb.TagNumber(3)
-  void clearShardKey() => clearField(3);
+  void clearShardKey() => $_clearField(3);
   @$pb.TagNumber(3)
   ShardKey ensureShardKey() => $_ensure(2);
 
   @$pb.TagNumber(4)
   ReshardingDirection get direction => $_getN(3);
   @$pb.TagNumber(4)
-  set direction(ReshardingDirection v) { setField(4, v); }
+  set direction(ReshardingDirection v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDirection() => $_has(3);
   @$pb.TagNumber(4)
-  void clearDirection() => clearField(4);
+  void clearDirection() => $_clearField(4);
 }
 
 class CollectionClusterInfoResponse extends $pb.GeneratedMessage {
@@ -5682,7 +5684,7 @@ class CollectionClusterInfoResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPeerId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPeerId() => clearField(1);
+  void clearPeerId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get shardCount => $_getI64(1);
@@ -5691,19 +5693,19 @@ class CollectionClusterInfoResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardCount() => clearField(2);
+  void clearShardCount() => $_clearField(2);
 
   @$pb.TagNumber(3)
-  $core.List<LocalShardInfo> get localShards => $_getList(2);
+  $pb.PbList<LocalShardInfo> get localShards => $_getList(2);
 
   @$pb.TagNumber(4)
-  $core.List<RemoteShardInfo> get remoteShards => $_getList(3);
+  $pb.PbList<RemoteShardInfo> get remoteShards => $_getList(3);
 
   @$pb.TagNumber(5)
-  $core.List<ShardTransferInfo> get shardTransfers => $_getList(4);
+  $pb.PbList<ShardTransferInfo> get shardTransfers => $_getList(4);
 
   @$pb.TagNumber(6)
-  $core.List<ReshardingInfo> get reshardingOperations => $_getList(5);
+  $pb.PbList<ReshardingInfo> get reshardingOperations => $_getList(5);
 }
 
 class MoveShard extends $pb.GeneratedMessage {
@@ -5773,7 +5775,7 @@ class MoveShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get fromPeerId => $_getI64(1);
@@ -5782,7 +5784,7 @@ class MoveShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFromPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFromPeerId() => clearField(2);
+  void clearFromPeerId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get toPeerId => $_getI64(2);
@@ -5791,16 +5793,16 @@ class MoveShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasToPeerId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearToPeerId() => clearField(3);
+  void clearToPeerId() => $_clearField(3);
 
   @$pb.TagNumber(4)
   ShardTransferMethod get method => $_getN(3);
   @$pb.TagNumber(4)
-  set method(ShardTransferMethod v) { setField(4, v); }
+  set method(ShardTransferMethod v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMethod() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMethod() => clearField(4);
+  void clearMethod() => $_clearField(4);
 
   @$pb.TagNumber(5)
   $core.int get toShardId => $_getIZ(4);
@@ -5809,7 +5811,7 @@ class MoveShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasToShardId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearToShardId() => clearField(5);
+  void clearToShardId() => $_clearField(5);
 }
 
 class ReplicateShard extends $pb.GeneratedMessage {
@@ -5879,7 +5881,7 @@ class ReplicateShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get fromPeerId => $_getI64(1);
@@ -5888,7 +5890,7 @@ class ReplicateShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFromPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFromPeerId() => clearField(2);
+  void clearFromPeerId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get toPeerId => $_getI64(2);
@@ -5897,16 +5899,16 @@ class ReplicateShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasToPeerId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearToPeerId() => clearField(3);
+  void clearToPeerId() => $_clearField(3);
 
   @$pb.TagNumber(4)
   ShardTransferMethod get method => $_getN(3);
   @$pb.TagNumber(4)
-  set method(ShardTransferMethod v) { setField(4, v); }
+  set method(ShardTransferMethod v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMethod() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMethod() => clearField(4);
+  void clearMethod() => $_clearField(4);
 
   @$pb.TagNumber(5)
   $core.int get toShardId => $_getIZ(4);
@@ -5915,7 +5917,7 @@ class ReplicateShard extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasToShardId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearToShardId() => clearField(5);
+  void clearToShardId() => $_clearField(5);
 }
 
 class AbortShardTransfer extends $pb.GeneratedMessage {
@@ -5980,7 +5982,7 @@ class AbortShardTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get fromPeerId => $_getI64(1);
@@ -5989,7 +5991,7 @@ class AbortShardTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFromPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFromPeerId() => clearField(2);
+  void clearFromPeerId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get toPeerId => $_getI64(2);
@@ -5998,7 +6000,7 @@ class AbortShardTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasToPeerId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearToPeerId() => clearField(3);
+  void clearToPeerId() => $_clearField(3);
 
   @$pb.TagNumber(4)
   $core.int get toShardId => $_getIZ(3);
@@ -6007,7 +6009,7 @@ class AbortShardTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasToShardId() => $_has(3);
   @$pb.TagNumber(4)
-  void clearToShardId() => clearField(4);
+  void clearToShardId() => $_clearField(4);
 }
 
 class RestartTransfer extends $pb.GeneratedMessage {
@@ -6077,7 +6079,7 @@ class RestartTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get fromPeerId => $_getI64(1);
@@ -6086,7 +6088,7 @@ class RestartTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFromPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFromPeerId() => clearField(2);
+  void clearFromPeerId() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get toPeerId => $_getI64(2);
@@ -6095,16 +6097,16 @@ class RestartTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasToPeerId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearToPeerId() => clearField(3);
+  void clearToPeerId() => $_clearField(3);
 
   @$pb.TagNumber(4)
   ShardTransferMethod get method => $_getN(3);
   @$pb.TagNumber(4)
-  set method(ShardTransferMethod v) { setField(4, v); }
+  set method(ShardTransferMethod v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMethod() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMethod() => clearField(4);
+  void clearMethod() => $_clearField(4);
 
   @$pb.TagNumber(5)
   $core.int get toShardId => $_getIZ(4);
@@ -6113,7 +6115,7 @@ class RestartTransfer extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasToShardId() => $_has(4);
   @$pb.TagNumber(5)
-  void clearToShardId() => clearField(5);
+  void clearToShardId() => $_clearField(5);
 }
 
 class Replica extends $pb.GeneratedMessage {
@@ -6168,7 +6170,7 @@ class Replica extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasShardId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardId() => clearField(1);
+  void clearShardId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get peerId => $_getI64(1);
@@ -6177,7 +6179,7 @@ class Replica extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPeerId() => clearField(2);
+  void clearPeerId() => $_clearField(2);
 }
 
 class CreateShardKey extends $pb.GeneratedMessage {
@@ -6238,11 +6240,11 @@ class CreateShardKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ShardKey get shardKey => $_getN(0);
   @$pb.TagNumber(1)
-  set shardKey(ShardKey v) { setField(1, v); }
+  set shardKey(ShardKey v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasShardKey() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardKey() => clearField(1);
+  void clearShardKey() => $_clearField(1);
   @$pb.TagNumber(1)
   ShardKey ensureShardKey() => $_ensure(0);
 
@@ -6253,7 +6255,7 @@ class CreateShardKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasShardsNumber() => $_has(1);
   @$pb.TagNumber(2)
-  void clearShardsNumber() => clearField(2);
+  void clearShardsNumber() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.int get replicationFactor => $_getIZ(2);
@@ -6262,10 +6264,10 @@ class CreateShardKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasReplicationFactor() => $_has(2);
   @$pb.TagNumber(3)
-  void clearReplicationFactor() => clearField(3);
+  void clearReplicationFactor() => $_clearField(3);
 
   @$pb.TagNumber(4)
-  $core.List<$fixnum.Int64> get placement => $_getList(3);
+  $pb.PbList<$fixnum.Int64> get placement => $_getList(3);
 }
 
 class DeleteShardKey extends $pb.GeneratedMessage {
@@ -6311,11 +6313,11 @@ class DeleteShardKey extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ShardKey get shardKey => $_getN(0);
   @$pb.TagNumber(1)
-  set shardKey(ShardKey v) { setField(1, v); }
+  set shardKey(ShardKey v) { $_setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasShardKey() => $_has(0);
   @$pb.TagNumber(1)
-  void clearShardKey() => clearField(1);
+  void clearShardKey() => $_clearField(1);
   @$pb.TagNumber(1)
   ShardKey ensureShardKey() => $_ensure(0);
 }
@@ -6423,7 +6425,7 @@ class UpdateCollectionClusterSetupRequest extends $pb.GeneratedMessage {
   static UpdateCollectionClusterSetupRequest? _defaultInstance;
 
   UpdateCollectionClusterSetupRequest_Operation whichOperation() => _UpdateCollectionClusterSetupRequest_OperationByTag[$_whichOneof(0)]!;
-  void clearOperation() => clearField($_whichOneof(0));
+  void clearOperation() => $_clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
   $core.String get collectionName => $_getSZ(0);
@@ -6432,49 +6434,49 @@ class UpdateCollectionClusterSetupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   MoveShard get moveShard => $_getN(1);
   @$pb.TagNumber(2)
-  set moveShard(MoveShard v) { setField(2, v); }
+  set moveShard(MoveShard v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMoveShard() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMoveShard() => clearField(2);
+  void clearMoveShard() => $_clearField(2);
   @$pb.TagNumber(2)
   MoveShard ensureMoveShard() => $_ensure(1);
 
   @$pb.TagNumber(3)
   ReplicateShard get replicateShard => $_getN(2);
   @$pb.TagNumber(3)
-  set replicateShard(ReplicateShard v) { setField(3, v); }
+  set replicateShard(ReplicateShard v) { $_setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReplicateShard() => $_has(2);
   @$pb.TagNumber(3)
-  void clearReplicateShard() => clearField(3);
+  void clearReplicateShard() => $_clearField(3);
   @$pb.TagNumber(3)
   ReplicateShard ensureReplicateShard() => $_ensure(2);
 
   @$pb.TagNumber(4)
   AbortShardTransfer get abortTransfer => $_getN(3);
   @$pb.TagNumber(4)
-  set abortTransfer(AbortShardTransfer v) { setField(4, v); }
+  set abortTransfer(AbortShardTransfer v) { $_setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAbortTransfer() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAbortTransfer() => clearField(4);
+  void clearAbortTransfer() => $_clearField(4);
   @$pb.TagNumber(4)
   AbortShardTransfer ensureAbortTransfer() => $_ensure(3);
 
   @$pb.TagNumber(5)
   Replica get dropReplica => $_getN(4);
   @$pb.TagNumber(5)
-  set dropReplica(Replica v) { setField(5, v); }
+  set dropReplica(Replica v) { $_setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDropReplica() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDropReplica() => clearField(5);
+  void clearDropReplica() => $_clearField(5);
   @$pb.TagNumber(5)
   Replica ensureDropReplica() => $_ensure(4);
 
@@ -6485,38 +6487,38 @@ class UpdateCollectionClusterSetupRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasTimeout() => $_has(5);
   @$pb.TagNumber(6)
-  void clearTimeout() => clearField(6);
+  void clearTimeout() => $_clearField(6);
 
   @$pb.TagNumber(7)
   CreateShardKey get createShardKey => $_getN(6);
   @$pb.TagNumber(7)
-  set createShardKey(CreateShardKey v) { setField(7, v); }
+  set createShardKey(CreateShardKey v) { $_setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateShardKey() => $_has(6);
   @$pb.TagNumber(7)
-  void clearCreateShardKey() => clearField(7);
+  void clearCreateShardKey() => $_clearField(7);
   @$pb.TagNumber(7)
   CreateShardKey ensureCreateShardKey() => $_ensure(6);
 
   @$pb.TagNumber(8)
   DeleteShardKey get deleteShardKey => $_getN(7);
   @$pb.TagNumber(8)
-  set deleteShardKey(DeleteShardKey v) { setField(8, v); }
+  set deleteShardKey(DeleteShardKey v) { $_setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteShardKey() => $_has(7);
   @$pb.TagNumber(8)
-  void clearDeleteShardKey() => clearField(8);
+  void clearDeleteShardKey() => $_clearField(8);
   @$pb.TagNumber(8)
   DeleteShardKey ensureDeleteShardKey() => $_ensure(7);
 
   @$pb.TagNumber(9)
   RestartTransfer get restartTransfer => $_getN(8);
   @$pb.TagNumber(9)
-  set restartTransfer(RestartTransfer v) { setField(9, v); }
+  set restartTransfer(RestartTransfer v) { $_setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasRestartTransfer() => $_has(8);
   @$pb.TagNumber(9)
-  void clearRestartTransfer() => clearField(9);
+  void clearRestartTransfer() => $_clearField(9);
   @$pb.TagNumber(9)
   RestartTransfer ensureRestartTransfer() => $_ensure(8);
 }
@@ -6568,7 +6570,7 @@ class UpdateCollectionClusterSetupResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResult() => clearField(1);
+  void clearResult() => $_clearField(1);
 }
 
 class CreateShardKeyRequest extends $pb.GeneratedMessage {
@@ -6628,16 +6630,16 @@ class CreateShardKeyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   CreateShardKey get request => $_getN(1);
   @$pb.TagNumber(2)
-  set request(CreateShardKey v) { setField(2, v); }
+  set request(CreateShardKey v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequest() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRequest() => clearField(2);
+  void clearRequest() => $_clearField(2);
   @$pb.TagNumber(2)
   CreateShardKey ensureRequest() => $_ensure(1);
 
@@ -6648,7 +6650,7 @@ class CreateShardKeyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTimeout() => clearField(3);
+  void clearTimeout() => $_clearField(3);
 }
 
 class DeleteShardKeyRequest extends $pb.GeneratedMessage {
@@ -6708,16 +6710,16 @@ class DeleteShardKeyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCollectionName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCollectionName() => clearField(1);
+  void clearCollectionName() => $_clearField(1);
 
   @$pb.TagNumber(2)
   DeleteShardKey get request => $_getN(1);
   @$pb.TagNumber(2)
-  set request(DeleteShardKey v) { setField(2, v); }
+  set request(DeleteShardKey v) { $_setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequest() => $_has(1);
   @$pb.TagNumber(2)
-  void clearRequest() => clearField(2);
+  void clearRequest() => $_clearField(2);
   @$pb.TagNumber(2)
   DeleteShardKey ensureRequest() => $_ensure(1);
 
@@ -6728,7 +6730,7 @@ class DeleteShardKeyRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasTimeout() => $_has(2);
   @$pb.TagNumber(3)
-  void clearTimeout() => clearField(3);
+  void clearTimeout() => $_clearField(3);
 }
 
 class CreateShardKeyResponse extends $pb.GeneratedMessage {
@@ -6778,7 +6780,7 @@ class CreateShardKeyResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResult() => clearField(1);
+  void clearResult() => $_clearField(1);
 }
 
 class DeleteShardKeyResponse extends $pb.GeneratedMessage {
@@ -6828,7 +6830,7 @@ class DeleteShardKeyResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasResult() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResult() => clearField(1);
+  void clearResult() => $_clearField(1);
 }
 
 

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: points_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -134,11 +134,7 @@ class PointsClient extends $grpc.Client {
       ($4.SearchMatrixPoints value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $4.SearchMatrixOffsetsResponse.fromBuffer(value));
 
-  PointsClient($grpc.ClientChannel channel,
-      {$grpc.CallOptions? options,
-      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
+  PointsClient(super.channel, {super.options, super.interceptors});
 
   $grpc.ResponseFuture<$4.PointsOperationResponse> upsert($4.UpsertPoints request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$upsert, request, options: options);
@@ -456,116 +452,116 @@ abstract class PointsServiceBase extends $grpc.Service {
         ($4.SearchMatrixOffsetsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$4.PointsOperationResponse> upsert_Pre($grpc.ServiceCall call, $async.Future<$4.UpsertPoints> request) async {
-    return upsert(call, await request);
+  $async.Future<$4.PointsOperationResponse> upsert_Pre($grpc.ServiceCall $call, $async.Future<$4.UpsertPoints> $request) async {
+    return upsert($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> delete_Pre($grpc.ServiceCall call, $async.Future<$4.DeletePoints> request) async {
-    return delete(call, await request);
+  $async.Future<$4.PointsOperationResponse> delete_Pre($grpc.ServiceCall $call, $async.Future<$4.DeletePoints> $request) async {
+    return delete($call, await $request);
   }
 
-  $async.Future<$4.GetResponse> get_Pre($grpc.ServiceCall call, $async.Future<$4.GetPoints> request) async {
-    return get(call, await request);
+  $async.Future<$4.GetResponse> get_Pre($grpc.ServiceCall $call, $async.Future<$4.GetPoints> $request) async {
+    return get($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> updateVectors_Pre($grpc.ServiceCall call, $async.Future<$4.UpdatePointVectors> request) async {
-    return updateVectors(call, await request);
+  $async.Future<$4.PointsOperationResponse> updateVectors_Pre($grpc.ServiceCall $call, $async.Future<$4.UpdatePointVectors> $request) async {
+    return updateVectors($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> deleteVectors_Pre($grpc.ServiceCall call, $async.Future<$4.DeletePointVectors> request) async {
-    return deleteVectors(call, await request);
+  $async.Future<$4.PointsOperationResponse> deleteVectors_Pre($grpc.ServiceCall $call, $async.Future<$4.DeletePointVectors> $request) async {
+    return deleteVectors($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> setPayload_Pre($grpc.ServiceCall call, $async.Future<$4.SetPayloadPoints> request) async {
-    return setPayload(call, await request);
+  $async.Future<$4.PointsOperationResponse> setPayload_Pre($grpc.ServiceCall $call, $async.Future<$4.SetPayloadPoints> $request) async {
+    return setPayload($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> overwritePayload_Pre($grpc.ServiceCall call, $async.Future<$4.SetPayloadPoints> request) async {
-    return overwritePayload(call, await request);
+  $async.Future<$4.PointsOperationResponse> overwritePayload_Pre($grpc.ServiceCall $call, $async.Future<$4.SetPayloadPoints> $request) async {
+    return overwritePayload($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> deletePayload_Pre($grpc.ServiceCall call, $async.Future<$4.DeletePayloadPoints> request) async {
-    return deletePayload(call, await request);
+  $async.Future<$4.PointsOperationResponse> deletePayload_Pre($grpc.ServiceCall $call, $async.Future<$4.DeletePayloadPoints> $request) async {
+    return deletePayload($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> clearPayload_Pre($grpc.ServiceCall call, $async.Future<$4.ClearPayloadPoints> request) async {
-    return clearPayload(call, await request);
+  $async.Future<$4.PointsOperationResponse> clearPayload_Pre($grpc.ServiceCall $call, $async.Future<$4.ClearPayloadPoints> $request) async {
+    return clearPayload($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> createFieldIndex_Pre($grpc.ServiceCall call, $async.Future<$4.CreateFieldIndexCollection> request) async {
-    return createFieldIndex(call, await request);
+  $async.Future<$4.PointsOperationResponse> createFieldIndex_Pre($grpc.ServiceCall $call, $async.Future<$4.CreateFieldIndexCollection> $request) async {
+    return createFieldIndex($call, await $request);
   }
 
-  $async.Future<$4.PointsOperationResponse> deleteFieldIndex_Pre($grpc.ServiceCall call, $async.Future<$4.DeleteFieldIndexCollection> request) async {
-    return deleteFieldIndex(call, await request);
+  $async.Future<$4.PointsOperationResponse> deleteFieldIndex_Pre($grpc.ServiceCall $call, $async.Future<$4.DeleteFieldIndexCollection> $request) async {
+    return deleteFieldIndex($call, await $request);
   }
 
-  $async.Future<$4.SearchResponse> search_Pre($grpc.ServiceCall call, $async.Future<$4.SearchPoints> request) async {
-    return search(call, await request);
+  $async.Future<$4.SearchResponse> search_Pre($grpc.ServiceCall $call, $async.Future<$4.SearchPoints> $request) async {
+    return search($call, await $request);
   }
 
-  $async.Future<$4.SearchBatchResponse> searchBatch_Pre($grpc.ServiceCall call, $async.Future<$4.SearchBatchPoints> request) async {
-    return searchBatch(call, await request);
+  $async.Future<$4.SearchBatchResponse> searchBatch_Pre($grpc.ServiceCall $call, $async.Future<$4.SearchBatchPoints> $request) async {
+    return searchBatch($call, await $request);
   }
 
-  $async.Future<$4.SearchGroupsResponse> searchGroups_Pre($grpc.ServiceCall call, $async.Future<$4.SearchPointGroups> request) async {
-    return searchGroups(call, await request);
+  $async.Future<$4.SearchGroupsResponse> searchGroups_Pre($grpc.ServiceCall $call, $async.Future<$4.SearchPointGroups> $request) async {
+    return searchGroups($call, await $request);
   }
 
-  $async.Future<$4.ScrollResponse> scroll_Pre($grpc.ServiceCall call, $async.Future<$4.ScrollPoints> request) async {
-    return scroll(call, await request);
+  $async.Future<$4.ScrollResponse> scroll_Pre($grpc.ServiceCall $call, $async.Future<$4.ScrollPoints> $request) async {
+    return scroll($call, await $request);
   }
 
-  $async.Future<$4.RecommendResponse> recommend_Pre($grpc.ServiceCall call, $async.Future<$4.RecommendPoints> request) async {
-    return recommend(call, await request);
+  $async.Future<$4.RecommendResponse> recommend_Pre($grpc.ServiceCall $call, $async.Future<$4.RecommendPoints> $request) async {
+    return recommend($call, await $request);
   }
 
-  $async.Future<$4.RecommendBatchResponse> recommendBatch_Pre($grpc.ServiceCall call, $async.Future<$4.RecommendBatchPoints> request) async {
-    return recommendBatch(call, await request);
+  $async.Future<$4.RecommendBatchResponse> recommendBatch_Pre($grpc.ServiceCall $call, $async.Future<$4.RecommendBatchPoints> $request) async {
+    return recommendBatch($call, await $request);
   }
 
-  $async.Future<$4.RecommendGroupsResponse> recommendGroups_Pre($grpc.ServiceCall call, $async.Future<$4.RecommendPointGroups> request) async {
-    return recommendGroups(call, await request);
+  $async.Future<$4.RecommendGroupsResponse> recommendGroups_Pre($grpc.ServiceCall $call, $async.Future<$4.RecommendPointGroups> $request) async {
+    return recommendGroups($call, await $request);
   }
 
-  $async.Future<$4.DiscoverResponse> discover_Pre($grpc.ServiceCall call, $async.Future<$4.DiscoverPoints> request) async {
-    return discover(call, await request);
+  $async.Future<$4.DiscoverResponse> discover_Pre($grpc.ServiceCall $call, $async.Future<$4.DiscoverPoints> $request) async {
+    return discover($call, await $request);
   }
 
-  $async.Future<$4.DiscoverBatchResponse> discoverBatch_Pre($grpc.ServiceCall call, $async.Future<$4.DiscoverBatchPoints> request) async {
-    return discoverBatch(call, await request);
+  $async.Future<$4.DiscoverBatchResponse> discoverBatch_Pre($grpc.ServiceCall $call, $async.Future<$4.DiscoverBatchPoints> $request) async {
+    return discoverBatch($call, await $request);
   }
 
-  $async.Future<$4.CountResponse> count_Pre($grpc.ServiceCall call, $async.Future<$4.CountPoints> request) async {
-    return count(call, await request);
+  $async.Future<$4.CountResponse> count_Pre($grpc.ServiceCall $call, $async.Future<$4.CountPoints> $request) async {
+    return count($call, await $request);
   }
 
-  $async.Future<$4.UpdateBatchResponse> updateBatch_Pre($grpc.ServiceCall call, $async.Future<$4.UpdateBatchPoints> request) async {
-    return updateBatch(call, await request);
+  $async.Future<$4.UpdateBatchResponse> updateBatch_Pre($grpc.ServiceCall $call, $async.Future<$4.UpdateBatchPoints> $request) async {
+    return updateBatch($call, await $request);
   }
 
-  $async.Future<$4.QueryResponse> query_Pre($grpc.ServiceCall call, $async.Future<$4.QueryPoints> request) async {
-    return query(call, await request);
+  $async.Future<$4.QueryResponse> query_Pre($grpc.ServiceCall $call, $async.Future<$4.QueryPoints> $request) async {
+    return query($call, await $request);
   }
 
-  $async.Future<$4.QueryBatchResponse> queryBatch_Pre($grpc.ServiceCall call, $async.Future<$4.QueryBatchPoints> request) async {
-    return queryBatch(call, await request);
+  $async.Future<$4.QueryBatchResponse> queryBatch_Pre($grpc.ServiceCall $call, $async.Future<$4.QueryBatchPoints> $request) async {
+    return queryBatch($call, await $request);
   }
 
-  $async.Future<$4.QueryGroupsResponse> queryGroups_Pre($grpc.ServiceCall call, $async.Future<$4.QueryPointGroups> request) async {
-    return queryGroups(call, await request);
+  $async.Future<$4.QueryGroupsResponse> queryGroups_Pre($grpc.ServiceCall $call, $async.Future<$4.QueryPointGroups> $request) async {
+    return queryGroups($call, await $request);
   }
 
-  $async.Future<$4.FacetResponse> facet_Pre($grpc.ServiceCall call, $async.Future<$4.FacetCounts> request) async {
-    return facet(call, await request);
+  $async.Future<$4.FacetResponse> facet_Pre($grpc.ServiceCall $call, $async.Future<$4.FacetCounts> $request) async {
+    return facet($call, await $request);
   }
 
-  $async.Future<$4.SearchMatrixPairsResponse> searchMatrixPairs_Pre($grpc.ServiceCall call, $async.Future<$4.SearchMatrixPoints> request) async {
-    return searchMatrixPairs(call, await request);
+  $async.Future<$4.SearchMatrixPairsResponse> searchMatrixPairs_Pre($grpc.ServiceCall $call, $async.Future<$4.SearchMatrixPoints> $request) async {
+    return searchMatrixPairs($call, await $request);
   }
 
-  $async.Future<$4.SearchMatrixOffsetsResponse> searchMatrixOffsets_Pre($grpc.ServiceCall call, $async.Future<$4.SearchMatrixPoints> request) async {
-    return searchMatrixOffsets(call, await request);
+  $async.Future<$4.SearchMatrixOffsetsResponse> searchMatrixOffsets_Pre($grpc.ServiceCall $call, $async.Future<$4.SearchMatrixPoints> $request) async {
+    return searchMatrixOffsets($call, await $request);
   }
 
   $async.Future<$4.PointsOperationResponse> upsert($grpc.ServiceCall call, $4.UpsertPoints request);

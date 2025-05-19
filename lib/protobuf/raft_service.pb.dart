@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: raft_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -13,6 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 class RaftMessage extends $pb.GeneratedMessage {
   factory RaftMessage({
@@ -61,7 +63,7 @@ class RaftMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
-  void clearMessage() => clearField(1);
+  void clearMessage() => $_clearField(1);
 }
 
 class AllPeers extends $pb.GeneratedMessage {
@@ -110,7 +112,7 @@ class AllPeers extends $pb.GeneratedMessage {
   static AllPeers? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<Peer> get allPeers => $_getList(0);
+  $pb.PbList<Peer> get allPeers => $_getList(0);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get firstPeerId => $_getI64(1);
@@ -119,7 +121,7 @@ class AllPeers extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasFirstPeerId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearFirstPeerId() => clearField(2);
+  void clearFirstPeerId() => $_clearField(2);
 }
 
 class Peer extends $pb.GeneratedMessage {
@@ -174,7 +176,7 @@ class Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $fixnum.Int64 get id => $_getI64(1);
@@ -183,7 +185,7 @@ class Peer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearId() => clearField(2);
+  void clearId() => $_clearField(2);
 }
 
 class AddPeerToKnownMessage extends $pb.GeneratedMessage {
@@ -243,7 +245,7 @@ class AddPeerToKnownMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.int get port => $_getIZ(1);
@@ -252,7 +254,7 @@ class AddPeerToKnownMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPort() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPort() => clearField(2);
+  void clearPort() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get id => $_getI64(2);
@@ -261,7 +263,7 @@ class AddPeerToKnownMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearId() => clearField(3);
+  void clearId() => $_clearField(3);
 }
 
 class PeerId extends $pb.GeneratedMessage {
@@ -311,7 +313,7 @@ class PeerId extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 }
 
 class Uri extends $pb.GeneratedMessage {
@@ -361,7 +363,7 @@ class Uri extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 }
 
 

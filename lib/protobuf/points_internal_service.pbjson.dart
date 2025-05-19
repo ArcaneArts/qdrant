@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: points_internal_service.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -259,13 +259,19 @@ const PointsOperationResponseInternal$json = {
   '2': [
     {'1': 'result', '3': 1, '4': 1, '5': 11, '6': '.qdrant.UpdateResultInternal', '10': 'result'},
     {'1': 'time', '3': 2, '4': 1, '5': 1, '10': 'time'},
+    {'1': 'usage', '3': 3, '4': 1, '5': 11, '6': '.qdrant.HardwareUsage', '9': 0, '10': 'usage', '17': true},
+  ],
+  '8': [
+    {'1': '_usage'},
   ],
 };
 
 /// Descriptor for `PointsOperationResponseInternal`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List pointsOperationResponseInternalDescriptor = $convert.base64Decode(
     'Ch9Qb2ludHNPcGVyYXRpb25SZXNwb25zZUludGVybmFsEjQKBnJlc3VsdBgBIAEoCzIcLnFkcm'
-    'FudC5VcGRhdGVSZXN1bHRJbnRlcm5hbFIGcmVzdWx0EhIKBHRpbWUYAiABKAFSBHRpbWU=');
+    'FudC5VcGRhdGVSZXN1bHRJbnRlcm5hbFIGcmVzdWx0EhIKBHRpbWUYAiABKAFSBHRpbWUSMAoF'
+    'dXNhZ2UYAyABKAsyFS5xZHJhbnQuSGFyZHdhcmVVc2FnZUgAUgV1c2FnZYgBAUIICgZfdXNhZ2'
+    'U=');
 
 @$core.Deprecated('Use updateResultInternalDescriptor instead')
 const UpdateResultInternal$json = {
@@ -409,6 +415,7 @@ const QueryEnum$json = {
     {'1': 'recommend_best_score', '3': 2, '4': 1, '5': 11, '6': '.qdrant.RecoQuery', '9': 0, '10': 'recommendBestScore'},
     {'1': 'discover', '3': 3, '4': 1, '5': 11, '6': '.qdrant.DiscoveryQuery', '9': 0, '10': 'discover'},
     {'1': 'context', '3': 4, '4': 1, '5': 11, '6': '.qdrant.ContextQuery', '9': 0, '10': 'context'},
+    {'1': 'recommend_sum_scores', '3': 5, '4': 1, '5': 11, '6': '.qdrant.RecoQuery', '9': 0, '10': 'recommendSumScores'},
   ],
   '8': [
     {'1': 'query'},
@@ -421,7 +428,8 @@ final $typed_data.Uint8List queryEnumDescriptor = $convert.base64Decode(
     'BSEG5lYXJlc3ROZWlnaGJvcnMSRQoUcmVjb21tZW5kX2Jlc3Rfc2NvcmUYAiABKAsyES5xZHJh'
     'bnQuUmVjb1F1ZXJ5SABSEnJlY29tbWVuZEJlc3RTY29yZRI0CghkaXNjb3ZlchgDIAEoCzIWLn'
     'FkcmFudC5EaXNjb3ZlcnlRdWVyeUgAUghkaXNjb3ZlchIwCgdjb250ZXh0GAQgASgLMhQucWRy'
-    'YW50LkNvbnRleHRRdWVyeUgAUgdjb250ZXh0QgcKBXF1ZXJ5');
+    'YW50LkNvbnRleHRRdWVyeUgAUgdjb250ZXh0EkUKFHJlY29tbWVuZF9zdW1fc2NvcmVzGAUgAS'
+    'gLMhEucWRyYW50LlJlY29RdWVyeUgAUhJyZWNvbW1lbmRTdW1TY29yZXNCBwoFcXVlcnk=');
 
 @$core.Deprecated('Use coreSearchPointsDescriptor instead')
 const CoreSearchPoints$json = {
@@ -586,6 +594,7 @@ const RawQuery$json = {
     {'1': 'recommend_best_score', '3': 2, '4': 1, '5': 11, '6': '.qdrant.RawQuery.Recommend', '9': 0, '10': 'recommendBestScore'},
     {'1': 'discover', '3': 3, '4': 1, '5': 11, '6': '.qdrant.RawQuery.Discovery', '9': 0, '10': 'discover'},
     {'1': 'context', '3': 4, '4': 1, '5': 11, '6': '.qdrant.RawQuery.Context', '9': 0, '10': 'context'},
+    {'1': 'recommend_sum_scores', '3': 5, '4': 1, '5': 11, '6': '.qdrant.RawQuery.Recommend', '9': 0, '10': 'recommendSumScores'},
   ],
   '3': [RawQuery_Recommend$json, RawQuery_RawContextPair$json, RawQuery_Discovery$json, RawQuery_Context$json],
   '8': [
@@ -634,15 +643,16 @@ final $typed_data.Uint8List rawQueryDescriptor = $convert.base64Decode(
     'N0Ek4KFHJlY29tbWVuZF9iZXN0X3Njb3JlGAIgASgLMhoucWRyYW50LlJhd1F1ZXJ5LlJlY29t'
     'bWVuZEgAUhJyZWNvbW1lbmRCZXN0U2NvcmUSOAoIZGlzY292ZXIYAyABKAsyGi5xZHJhbnQuUm'
     'F3UXVlcnkuRGlzY292ZXJ5SABSCGRpc2NvdmVyEjQKB2NvbnRleHQYBCABKAsyGC5xZHJhbnQu'
-    'UmF3UXVlcnkuQ29udGV4dEgAUgdjb250ZXh0Gm0KCVJlY29tbWVuZBIvCglwb3NpdGl2ZXMYAS'
-    'ADKAsyES5xZHJhbnQuUmF3VmVjdG9yUglwb3NpdGl2ZXMSLwoJbmVnYXRpdmVzGAIgAygLMhEu'
-    'cWRyYW50LlJhd1ZlY3RvclIJbmVnYXRpdmVzGm4KDlJhd0NvbnRleHRQYWlyEi0KCHBvc2l0aX'
-    'ZlGAEgASgLMhEucWRyYW50LlJhd1ZlY3RvclIIcG9zaXRpdmUSLQoIbmVnYXRpdmUYAiABKAsy'
-    'ES5xZHJhbnQuUmF3VmVjdG9yUghuZWdhdGl2ZRpxCglEaXNjb3ZlcnkSKQoGdGFyZ2V0GAEgAS'
-    'gLMhEucWRyYW50LlJhd1ZlY3RvclIGdGFyZ2V0EjkKB2NvbnRleHQYAiADKAsyHy5xZHJhbnQu'
-    'UmF3UXVlcnkuUmF3Q29udGV4dFBhaXJSB2NvbnRleHQaRAoHQ29udGV4dBI5Cgdjb250ZXh0GA'
-    'EgAygLMh8ucWRyYW50LlJhd1F1ZXJ5LlJhd0NvbnRleHRQYWlyUgdjb250ZXh0QgkKB3Zhcmlh'
-    'bnQ=');
+    'UmF3UXVlcnkuQ29udGV4dEgAUgdjb250ZXh0Ek4KFHJlY29tbWVuZF9zdW1fc2NvcmVzGAUgAS'
+    'gLMhoucWRyYW50LlJhd1F1ZXJ5LlJlY29tbWVuZEgAUhJyZWNvbW1lbmRTdW1TY29yZXMabQoJ'
+    'UmVjb21tZW5kEi8KCXBvc2l0aXZlcxgBIAMoCzIRLnFkcmFudC5SYXdWZWN0b3JSCXBvc2l0aX'
+    'ZlcxIvCgluZWdhdGl2ZXMYAiADKAsyES5xZHJhbnQuUmF3VmVjdG9yUgluZWdhdGl2ZXMabgoO'
+    'UmF3Q29udGV4dFBhaXISLQoIcG9zaXRpdmUYASABKAsyES5xZHJhbnQuUmF3VmVjdG9yUghwb3'
+    'NpdGl2ZRItCghuZWdhdGl2ZRgCIAEoCzIRLnFkcmFudC5SYXdWZWN0b3JSCG5lZ2F0aXZlGnEK'
+    'CURpc2NvdmVyeRIpCgZ0YXJnZXQYASABKAsyES5xZHJhbnQuUmF3VmVjdG9yUgZ0YXJnZXQSOQ'
+    'oHY29udGV4dBgCIAMoCzIfLnFkcmFudC5SYXdRdWVyeS5SYXdDb250ZXh0UGFpclIHY29udGV4'
+    'dBpECgdDb250ZXh0EjkKB2NvbnRleHQYASADKAsyHy5xZHJhbnQuUmF3UXVlcnkuUmF3Q29udG'
+    'V4dFBhaXJSB2NvbnRleHRCCQoHdmFyaWFudA==');
 
 @$core.Deprecated('Use queryShardPointsDescriptor instead')
 const QueryShardPoints$json = {
@@ -674,6 +684,7 @@ const QueryShardPoints_Query$json = {
     {'1': 'fusion', '3': 2, '4': 1, '5': 14, '6': '.qdrant.Fusion', '9': 0, '10': 'fusion'},
     {'1': 'order_by', '3': 3, '4': 1, '5': 11, '6': '.qdrant.OrderBy', '9': 0, '10': 'orderBy'},
     {'1': 'sample', '3': 4, '4': 1, '5': 14, '6': '.qdrant.Sample', '9': 0, '10': 'sample'},
+    {'1': 'formula', '3': 5, '4': 1, '5': 11, '6': '.qdrant.Formula', '9': 0, '10': 'formula'},
   ],
   '8': [
     {'1': 'score'},
@@ -708,17 +719,18 @@ final $typed_data.Uint8List queryShardPointsDescriptor = $convert.base64Decode(
     'JlX3RocmVzaG9sZBgHIAEoAkgBUg5zY29yZVRocmVzaG9sZIgBARIWCgZvZmZzZXQYCCABKARS'
     'Bm9mZnNldBI+Cgx3aXRoX3BheWxvYWQYCSABKAsyGy5xZHJhbnQuV2l0aFBheWxvYWRTZWxlY3'
     'RvclILd2l0aFBheWxvYWQSPgoMd2l0aF92ZWN0b3JzGAogASgLMhsucWRyYW50LldpdGhWZWN0'
-    'b3JzU2VsZWN0b3JSC3dpdGhWZWN0b3JzGr4BCgVRdWVyeRIqCgZ2ZWN0b3IYASABKAsyEC5xZH'
+    'b3JzU2VsZWN0b3JSC3dpdGhWZWN0b3JzGusBCgVRdWVyeRIqCgZ2ZWN0b3IYASABKAsyEC5xZH'
     'JhbnQuUmF3UXVlcnlIAFIGdmVjdG9yEigKBmZ1c2lvbhgCIAEoDjIOLnFkcmFudC5GdXNpb25I'
     'AFIGZnVzaW9uEiwKCG9yZGVyX2J5GAMgASgLMg8ucWRyYW50Lk9yZGVyQnlIAFIHb3JkZXJCeR'
-    'IoCgZzYW1wbGUYBCABKA4yDi5xZHJhbnQuU2FtcGxlSABSBnNhbXBsZUIHCgVzY29yZRrSAgoI'
-    'UHJlZmV0Y2gSPQoIcHJlZmV0Y2gYASADKAsyIS5xZHJhbnQuUXVlcnlTaGFyZFBvaW50cy5Qcm'
-    'VmZXRjaFIIcHJlZmV0Y2gSNAoFcXVlcnkYAiABKAsyHi5xZHJhbnQuUXVlcnlTaGFyZFBvaW50'
-    'cy5RdWVyeVIFcXVlcnkSGQoFdXNpbmcYAyABKAlIAFIFdXNpbmeIAQESJgoGZmlsdGVyGAQgAS'
-    'gLMg4ucWRyYW50LkZpbHRlclIGZmlsdGVyEhQKBWxpbWl0GAUgASgEUgVsaW1pdBIsCgZwYXJh'
-    'bXMYBiABKAsyFC5xZHJhbnQuU2VhcmNoUGFyYW1zUgZwYXJhbXMSLAoPc2NvcmVfdGhyZXNob2'
-    'xkGAcgASgCSAFSDnNjb3JlVGhyZXNob2xkiAEBQggKBl91c2luZ0ISChBfc2NvcmVfdGhyZXNo'
-    'b2xkQggKBl91c2luZ0ISChBfc2NvcmVfdGhyZXNob2xk');
+    'IoCgZzYW1wbGUYBCABKA4yDi5xZHJhbnQuU2FtcGxlSABSBnNhbXBsZRIrCgdmb3JtdWxhGAUg'
+    'ASgLMg8ucWRyYW50LkZvcm11bGFIAFIHZm9ybXVsYUIHCgVzY29yZRrSAgoIUHJlZmV0Y2gSPQ'
+    'oIcHJlZmV0Y2gYASADKAsyIS5xZHJhbnQuUXVlcnlTaGFyZFBvaW50cy5QcmVmZXRjaFIIcHJl'
+    'ZmV0Y2gSNAoFcXVlcnkYAiABKAsyHi5xZHJhbnQuUXVlcnlTaGFyZFBvaW50cy5RdWVyeVIFcX'
+    'VlcnkSGQoFdXNpbmcYAyABKAlIAFIFdXNpbmeIAQESJgoGZmlsdGVyGAQgASgLMg4ucWRyYW50'
+    'LkZpbHRlclIGZmlsdGVyEhQKBWxpbWl0GAUgASgEUgVsaW1pdBIsCgZwYXJhbXMYBiABKAsyFC'
+    '5xZHJhbnQuU2VhcmNoUGFyYW1zUgZwYXJhbXMSLAoPc2NvcmVfdGhyZXNob2xkGAcgASgCSAFS'
+    'DnNjb3JlVGhyZXNob2xkiAEBQggKBl91c2luZ0ISChBfc2NvcmVfdGhyZXNob2xkQggKBl91c2'
+    'luZ0ISChBfc2NvcmVfdGhyZXNob2xk');
 
 @$core.Deprecated('Use queryBatchPointsInternalDescriptor instead')
 const QueryBatchPointsInternal$json = {
@@ -854,11 +866,16 @@ const FacetResponseInternal$json = {
   '2': [
     {'1': 'hits', '3': 1, '4': 3, '5': 11, '6': '.qdrant.FacetHitInternal', '10': 'hits'},
     {'1': 'time', '3': 2, '4': 1, '5': 1, '10': 'time'},
+    {'1': 'usage', '3': 3, '4': 1, '5': 11, '6': '.qdrant.HardwareUsage', '9': 0, '10': 'usage', '17': true},
+  ],
+  '8': [
+    {'1': '_usage'},
   ],
 };
 
 /// Descriptor for `FacetResponseInternal`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List facetResponseInternalDescriptor = $convert.base64Decode(
     'ChVGYWNldFJlc3BvbnNlSW50ZXJuYWwSLAoEaGl0cxgBIAMoCzIYLnFkcmFudC5GYWNldEhpdE'
-    'ludGVybmFsUgRoaXRzEhIKBHRpbWUYAiABKAFSBHRpbWU=');
+    'ludGVybmFsUgRoaXRzEhIKBHRpbWUYAiABKAFSBHRpbWUSMAoFdXNhZ2UYAyABKAsyFS5xZHJh'
+    'bnQuSGFyZHdhcmVVc2FnZUgAUgV1c2FnZYgBAUIICgZfdXNhZ2U=');
 
