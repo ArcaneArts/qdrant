@@ -100,6 +100,7 @@ message DeleteFieldIndexCollectionInternal {
 message PointsOperationResponseInternal {
   UpdateResultInternal result = 1;
   double time = 2; // Time spent to process
+  optional HardwareUsage usage = 3;
 }
 
 // Has to be backward compatible with `UpdateResult`!
@@ -154,6 +155,7 @@ message QueryEnum {
     RecoQuery recommend_best_score = 2; // Recommend points with higher similarity to positive examples
     DiscoveryQuery discover = 3; // Search for points that get closer to a target, constrained by a context of positive and negative pairs
     ContextQuery context = 4; // Use only the context to find points that minimize loss against negative examples
+    RecoQuery recommend_sum_scores = 5; // Recommend points which have the greatest sum of scores against all vectors. Positive vectors are added, negatives are subtracted.
   }
 }
 
@@ -234,6 +236,7 @@ message RawQuery {
     Recommend recommend_best_score = 2; // Recommend points with highest similarity to positive examples, or lowest to negative examples
     Discovery discover = 3; // Search for points that get closer to a target, constrained by a context of positive and negative pairs
     Context context = 4; // Use only the context to find points that minimize loss against negative examples
+    Recommend recommend_sum_scores = 5; // Recommend points which have the greatest sum of scores against all vectors. Positive vectors are added, negatives are subtracted.
   }
 }
 
@@ -244,6 +247,7 @@ message QueryShardPoints {
       Fusion fusion = 2; // One of the fusion methods
       OrderBy order_by = 3; // Order by a field
       Sample sample = 4; // Sample points
+      Formula formula = 5; // Use an arbitrary formula to rescore points
     }
   }
 
@@ -317,4 +321,5 @@ message FacetHitInternal {
 message FacetResponseInternal {
     repeated FacetHitInternal hits = 1;
     double time = 2; // Time spent to process
+    optional HardwareUsage usage = 3;
 }
