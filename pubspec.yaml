@@ -1,6 +1,6 @@
 name: qdrant
 description: gRPC client for Qdrant
-version: 1.0.1
+version: 1.0.1+1
 repository: https://github.com/ArcaneArts/qdrant
 
 environment:
